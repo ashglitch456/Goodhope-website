@@ -77,9 +77,9 @@ a:hover { color: #C24F12; }
 </div>
 </header>
 <!-- HERO -->
-<section data-screen-label="Hero" onmousemove="{{ onHeroMouseMove }}" style="position: relative; height: 100vh; min-height: 640px; background: #0b0b0c; overflow: hidden;">
+<section data-screen-label="Hero" style="position: relative; height: 100vh; min-height: 640px; background: #0b0b0c; overflow: hidden;">
 <div style="position: absolute; inset: 0; overflow: hidden;">
-<div style="position: absolute; inset: 0; transition: transform 0.6s cubic-bezier(0.22,1,0.36,1); transform: {{ parallaxTransform }};">
+<div style="position: absolute; inset: 0; transition: transform 0.6s cubic-bezier(0.22,1,0.36,1); transform: translate3d(0,0,0) scale(1.05);">
 <img alt="Drop hero photo: tyre tread close-up" loading="lazy" src="intricate-tire-tread-with-glistening-surface.png" style="width:100%; height:100%; transform-origin: 60% 45%; animation: heroKenBurns 26s ease-in-out infinite; filter: saturate(0.94) contrast(1.05);;object-fit:cover"/>
 </div>
 </div>
@@ -103,7 +103,7 @@ a:hover { color: #C24F12; }
 <a href="https://wa.me/14379885132" style="background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.5); font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 17px 32px; border-radius: 3px;" style-hover="border-color: #fff; background: rgba(255,255,255,0.08);">WhatsApp Us Now</a>
 </div>
 <p style="font-size: 13.5px; color: #8A867D; letter-spacing: 0.5px; margin: 0 0 44px 0; opacity: 0; animation: fadeUp 0.9s ease-out 0.7s forwards;">Manufactured in-house · Shipping to 30+ countries · 24-hour quote response</p>
-<sc-if hint-placeholder-val="{{ true }}" value="{{ showTrustBar }}">
+
 <div style="display: flex; gap: 48px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.14); opacity: 0; animation: fadeUp 0.9s ease-out 0.9s forwards;">
 <div>
 <div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 30px; color: #F3F1EC;">15+</div>
@@ -118,32 +118,10 @@ a:hover { color: #C24F12; }
 <div style="font-size: 12.5px; color: #8b857c; margin-top: 4px; letter-spacing: 0.3px;">quote response time</div>
 </div>
 </div>
-</sc-if>
+
 </div>
 </section>
 <!-- TRUST STATS -->
-<sc-if hint-placeholder-val="{{ true }}" value="{{ false }}">
-<section style="background: #242322; padding: 40px 48px;">
-<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center;">
-<div>
-<div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: #E8631C;">15+</div>
-<div style="font-size: 13px; color: #B9B5AC; letter-spacing: 1.2px; text-transform: uppercase; margin-top: 6px;">Years in Business</div>
-</div>
-<div>
-<div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: #E8631C;">30+</div>
-<div style="font-size: 13px; color: #B9B5AC; letter-spacing: 1.2px; text-transform: uppercase; margin-top: 6px;">Countries Served</div>
-</div>
-<div>
-<div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: #E8631C;">&lt;24h</div>
-<div style="font-size: 13px; color: #B9B5AC; letter-spacing: 1.2px; text-transform: uppercase; margin-top: 6px;">Quote Response Time</div>
-</div>
-<div>
-<div style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; color: #E8631C;">1:1</div>
-<div style="font-size: 13px; color: #B9B5AC; letter-spacing: 1.2px; text-transform: uppercase; margin-top: 6px;">Direct Line to Our Team</div>
-</div>
-</div>
-</section>
-</sc-if>
 <!-- SERVICES / PRODUCT CATEGORIES -->
 <section style="padding: 104px 48px; max-width: 1280px; margin: 0 auto;">
 <div style="max-width: 640px; margin: 0 auto 64px auto; text-align: center;">
@@ -232,13 +210,13 @@ a:hover { color: #C24F12; }
 <div style="position: relative;">
 <div style="display: flex; width:100%; height:180px; overflow: hidden; gap: 3px; box-sizing: border-box; background:#fff;">
 <div style="width: calc(34% - 2px); height: 180px; overflow: hidden; flex-shrink: 0; box-sizing: border-box; background:#fff;">
-<img alt="Repair tool photo 1" loading="lazy" src="" style="width:100%; height:180px;;object-fit:contain"/>
+<div style="width:100%; height:180px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Repair tool photo 1</div>
 </div>
 <div style="width: calc(33% - 2px); height: 180px; overflow: hidden; flex-shrink: 0; box-sizing: border-box; background:#fff;">
-<img alt="Repair tool photo 2" loading="lazy" src="" style="width:100%; height:180px;;object-fit:contain"/>
+<div style="width:100%; height:180px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Repair tool photo 2</div>
 </div>
 <div style="width: calc(33% - 2px); height: 180px; overflow: hidden; flex-shrink: 0; box-sizing: border-box; background:#fff;">
-<img alt="Repair tool photo 3" loading="lazy" src="" style="width:100%; height:180px;;object-fit:contain"/>
+<div style="width:100%; height:180px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Repair tool photo 3</div>
 </div>
 </div>
 <span style="position: absolute; top: 12px; left: 12px; background: rgba(27,26,25,0.85); color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 1px; padding: 5px 10px; border-radius: 3px;">04</span>
@@ -281,7 +259,7 @@ a:hover { color: #C24F12; }
 <p style="font-size: 16px; color: #6E6A62; line-height: 1.75; margin: 0 0 16px 0;">Our products are distributed across India and exported to key international markets through strategic partnerships — including Brazil, the UAE region (Saudi Arabia, Oman, Qatar, Bahrain, Syria), South Asia (Sri Lanka, Nepal, Bhutan, Bangladesh), Africa (Kenya, Nigeria, Uganda, Egypt, Mauritius, Ghana, Madagascar), and beyond to Finland and Fiji.</p>
 <p style="font-size: 16px; color: #6E6A62; line-height: 1.75; margin: 0;">As part of our growth strategy, we're proud to open a new facility in Ontario, Canada — expanding our commitment to delivering excellence and serving clients across North America.</p>
 </div>
-<img alt="Drop photo: facility / team" loading="lazy" src="" style="width:100%; height: 460px;;object-fit:cover;border-radius:8px"/>
+<div style="width:100%; height: 460px;;object-fit:cover;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Facility / team</div>
 </div>
 <div style="max-width: 1280px; margin: 60px auto 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; border-top: 1px solid #E6E2DA; padding-top: 44px;">
 <div style="text-align: center;">
@@ -307,7 +285,7 @@ a:hover { color: #C24F12; }
 <p style="font-size: 16px; color: #6E6A62; line-height: 1.75; margin: 0 0 22px 0;">From our own manufacturing facilities, we ship machinery and consumables to retreading operations across Africa, the Americas, Europe, and Asia — with export documentation and freight handled end to end.</p>
 <a href="#quote" style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; color: #E8631C;">Get a shipping quote →</a>
 </div>
-<img alt="Drop image: global distribution map" loading="lazy" src="" style="width:100%; height: 360px;;object-fit:cover;border-radius:8px"/>
+<div style="width:100%; height: 360px;;object-fit:cover;border-radius:8px;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Global distribution map</div>
 </div>
 </section>
 <!-- CLIENT LOGOS -->
@@ -315,11 +293,11 @@ a:hover { color: #C24F12; }
 <div style="max-width: 1280px; margin: 0 auto;">
 <p style="text-align: center; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #6E6A62; font-weight: 600; margin: 0 0 36px 0;">Trusted by Retreading Workshops Worldwide</p>
 <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px;">
-<img alt="Client logo" loading="lazy" src="" style="width:100%; height:88px;;object-fit:contain"/>
-<img alt="Client logo" loading="lazy" src="" style="width:100%; height:88px;;object-fit:contain"/>
-<img alt="Client logo" loading="lazy" src="" style="width:100%; height:88px;;object-fit:contain"/>
-<img alt="Client logo" loading="lazy" src="" style="width:100%; height:88px;;object-fit:contain"/>
-<img alt="Client logo" loading="lazy" src="" style="width:100%; height:88px;;object-fit:contain"/>
+<div style="width:100%; height:88px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Photo coming soon</div>
+<div style="width:100%; height:88px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Photo coming soon</div>
+<div style="width:100%; height:88px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Photo coming soon</div>
+<div style="width:100%; height:88px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Photo coming soon</div>
+<div style="width:100%; height:88px;;object-fit:contain;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Photo coming soon</div>
 </div>
 </div>
 </section>
@@ -337,9 +315,9 @@ a:hover { color: #C24F12; }
 </div>
 </div>
 <div style="background: #F7F5F1; border-radius: 10px; padding: 40px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); border-top: 4px solid #E8631C;">
-<sc-if hint-placeholder-val="{{ true }}" value="{{ !submitted }}">
-<form onsubmit="{{ handleSubmit }}" style="display: flex; flex-direction: column; gap: 14px;">
-<input name="name" placeholder="Full Name" required="{{ true }}" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
+
+<form style="display: flex; flex-direction: column; gap: 14px;">
+<input name="name" placeholder="Full Name" required style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
 <input name="company" placeholder="Company / Workshop Name" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
 <input name="country" placeholder="Country" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
@@ -356,14 +334,7 @@ a:hover { color: #C24F12; }
 <textarea name="message" placeholder="Tell us what you need..." rows="4" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
 <button style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 17px; border: none; border-radius: 4px; cursor: pointer; margin-top: 4px;" style-hover="background: #C24F12; color: #fff;" type="submit">Send Quote Request</button>
 </form>
-</sc-if>
-<sc-if hint-placeholder-val="{{ false }}" value="{{ submitted }}">
-<div style="text-align: center; padding: 40px 0;">
-<div style="font-size: 40px; margin-bottom: 16px;">✓</div>
-<h3 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 22px; margin: 0 0 10px 0;">Request Received</h3>
-<p style="font-size: 15px; color: #6E6A62; margin: 0;">Thanks — our team will reach out within 24 hours.</p>
-</div>
-</sc-if>
+
 </div>
 </div>
 </section>

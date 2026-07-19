@@ -31,7 +31,7 @@ a:hover { color: #C24F12; }
 <div style="font-family: 'Inter', sans-serif; color: #1B1A19; background: #F7F5F1; width: 100%; min-height: 100vh;">
 <header style="position: sticky; top: 0; z-index: 100; background: #1B1A19; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 14px 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); box-sizing: border-box;">
 <div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
-<a href="#" onclick="{{ goBack }}" style="display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:#2A2926; color:#fff; font-size:17px; flex-shrink:0; line-height:1; cursor:pointer;" title="Go back">←</a>
+<a href="#" onclick="history.back(); return false;" style="display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:#2A2926; color:#fff; font-size:17px; flex-shrink:0; line-height:1; cursor:pointer;" title="Go back">←</a>
 <a href="index.html" style="display:flex; align-items:center; gap:10px; line-height: 1; flex-shrink: 0;">
 <svg fill="none" height="34" style="flex-shrink:0;" viewbox="0 0 34 34" width="34" xmlns="http://www.w3.org/2000/svg">
 <circle cx="17" cy="17" r="14.5" stroke="#E8631C" stroke-width="3"></circle>
@@ -62,14 +62,14 @@ a:hover { color: #C24F12; }
 </div>
 </header>
 <section style="padding: 40px 48px 0 48px; max-width: 1280px; margin: 0 auto;">
-<p style="font-size: 13px; color: #8A867D; margin: 0 0 24px 0;"><a href="index.html" style="color: #8A867D;">Home</a> / <a href="machinery.html" style="color: #8A867D;">Machinery</a> / <span style="color: #1B1A19;">{{ productName }}</span></p>
+<p style="font-size: 13px; color: #8A867D; margin: 0 0 24px 0;"><a href="index.html" style="color: #8A867D;">Home</a> / <a href="machinery.html" style="color: #8A867D;">Machinery</a> / <span style="color: #1B1A19;">Buffing Machine</span></p>
 </section>
 <section style="padding: 0 48px 64px 48px; max-width: 1280px; margin: 0 auto;">
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
-<img alt="Drop photo: buffing machine" loading="lazy" src="" style="width:100%; height: 420px; background:#fff;;object-fit:contain;border-radius:6px"/>
+<div style="width:100%; height: 420px; background:#fff;;object-fit:contain;border-radius:6px;display:flex;align-items:center;justify-content:center;background:#F0EEEA;color:#A8A296;font-family:'Inter',sans-serif;font-size:11px;text-align:center;padding:6px;box-sizing:border-box;">Buffing machine</div>
 <div>
 <span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">MACHINERY</span>
-<h1 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; margin: 10px 0 10px 0;">{{ productName }}</h1>
+<h1 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 36px; margin: 10px 0 10px 0;">Buffing Machine</h1>
 <p style="font-size: 16px; color: #6E6A62; line-height: 1.6; margin: 0 0 24px 0;">Removes worn tread and trues the casing to the correct radius, sized for cold and hot process shops. Adjustable rasp positioning and a digital undertread gauge keep every casing within spec before rebuilding.</p>
 <table class="specs" style="width: 100%; border-collapse: collapse; margin-bottom: 24px;">
 <tr><td style="color: #6E6A62;">Tyre size range</td><td style="text-align: right; font-weight: 600;">6.50-14 to 12.00-24.5 (within 30" buffing radius)</td></tr>
@@ -97,7 +97,7 @@ a:hover { color: #C24F12; }
 <div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 64px;">
 <div>
 <span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">GET A QUOTE</span>
-<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 34px; color: #fff; margin: 12px 0 20px 0;">Ask About the {{ productName }}</h2>
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 34px; color: #fff; margin: 12px 0 20px 0;">Ask About the Buffing Machine</h2>
 <p style="font-size: 16px; color: #B9B5AC; line-height: 1.7; margin: 0 0 28px 0;">Send us your requirements and we'll get back to you within 24 hours with pricing and lead times — no obligation.</p>
 <div style="display: flex; flex-direction: column; gap: 16px;">
 <a href="tel:+14379885132" style="color: #fff; font-weight: 600; font-size: 16px;">📞 +1 (437) 988-5132</a>
@@ -106,9 +106,9 @@ a:hover { color: #C24F12; }
 </div>
 </div>
 <div style="background: #F7F5F1; border-radius: 8px; padding: 36px;">
-<sc-if hint-placeholder-val="{{ true }}" value="{{ !submitted }}">
-<form onsubmit="{{ handleSubmit }}" style="display: flex; flex-direction: column; gap: 14px;">
-<input name="name" placeholder="Full Name" required="{{ true }}" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
+
+<form style="display: flex; flex-direction: column; gap: 14px;">
+<input name="name" placeholder="Full Name" required style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
 <input name="company" placeholder="Company / Workshop Name" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
 <input name="country" placeholder="Country" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
@@ -117,14 +117,7 @@ a:hover { color: #C24F12; }
 <textarea name="message" placeholder="Quantity, tyre sizes, anything else we should know..." rows="4" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
 <button style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 4px;" style-hover="background: #C24F12; color: #fff;" type="submit">Send Quote Request</button>
 </form>
-</sc-if>
-<sc-if hint-placeholder-val="{{ false }}" value="{{ submitted }}">
-<div style="text-align: center; padding: 40px 0;">
-<div style="font-size: 40px; margin-bottom: 16px;">✓</div>
-<h3 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 22px; margin: 0 0 10px 0;">Request Received</h3>
-<p style="font-size: 15px; color: #6E6A62; margin: 0;">Thanks — our team will reach out within 24 hours.</p>
-</div>
-</sc-if>
+
 </div>
 </div>
 </section>
