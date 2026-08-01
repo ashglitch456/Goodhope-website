@@ -13,16 +13,15 @@ hhh<!DOCTYPE html>
 <meta name="twitter:card" content="summary">
 <style>
 body { margin: 0; background: #F7F5F1; }h
-img[style*="contain"] { background: #fff; }
+img[style*="contain"] { background: #fff; }hh
 ::selection { background: #E8631C; color: #fff; }
 a { color: #E8631C; text-decoration: none; }
 a:hover { color: #C24F12; }
 
 .product-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 1.5rem;
-padding: 0;
+display: flex;
+flex-wrap: wrap;
+
 width: 100%;
 max-width: 1280px;
 margin: 0 auto;
@@ -55,7 +54,8 @@ flex-direction: column;
   line-height: 1.6;
 }
 
-@media (max-width: 1200px) {
+22
+  {
 .product-grid {
 grid-template-columns: repeat(2, 1fr);
 }
