@@ -21,7 +21,7 @@ a:hover { color: #C24F12; }
 .product-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-gap: 2rem;
+gap: 1.5rem;
 padding: 0;
 width: 100%;
 max-width: 1280px;
@@ -35,12 +35,12 @@ display: flex;
   flex-direction: column;
 gap: 0;
 overflow: hidden;
-  min-height: 750px;
+  min-height: auto;
 }
 
 .product-grid > div img {
 width: 100%;
-height: 280;
+height: 280px;
 flex-shrink: 0;
 object-fit: contain;
 background: #fff;
@@ -48,7 +48,7 @@ background: #fff;
 
 .product-grid > div > div {
 flex: 1;
-padding: 28px;
+padding: 24px;
 display: flex;
 flex-direction: column;
   gap: 12px;
