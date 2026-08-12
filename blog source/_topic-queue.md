@@ -12,7 +12,7 @@ and the real, citable fact/trend/source the post should be built around.
 
 ## Pending (already drafted content, not yet in the repo — do these first if missing)
 
-- [ ] **Retreads vs. New Tires: What the Cost-Per-Mile Numbers Actually Show**
+- [x] **Retreads vs. New Tires: What the Cost-Per-Mile Numbers Actually Show**
       Keyword: "retread tires vs new tires" (~50/mo, Semrush US, Aug 2026)
       Anchor fact: retreading runs 35-45% below new-tire cost per lifecycle
       (industry-standard figure); TRIB/TIA publish data showing retread
