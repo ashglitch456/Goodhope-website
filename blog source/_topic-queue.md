@@ -19,7 +19,7 @@ and the real, citable fact/trend/source the post should be built around.
       failure rates track construction/maintenance quality, not the retread
       process itself.
 
-- [ ] **Extruder Guns for Tire Repair: A Buyer's Guide**
+- [x] **Extruder Guns for Tire Repair: A Buyer's Guide**
       Keyword: "extruder gun" (~90/mo, Semrush US, Aug 2026; Shamrock ranks
       only #25 for this term — winnable)
       Anchor fact: OTR repair typically needs 750W-class guns vs. 400W-class
