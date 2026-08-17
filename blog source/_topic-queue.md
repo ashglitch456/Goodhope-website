@@ -25,7 +25,7 @@ and the real, citable fact/trend/source the post should be built around.
       Anchor fact: OTR repair typically needs 750W-class guns vs. 400W-class
       for passenger/light-truck — real spec differentiator, not filler.
 
-- [ ] **Pre-Cure vs. Mould-Cure Retreading: Which Process Fits Your Shop**
+- [x] **Pre-Cure vs. Mould-Cure Retreading: Which Process Fits Your Shop**
       Keyword: "tire retreading equipment" / "tire retread machine"
       (~20/mo each, Semrush US, Aug 2026)
       Anchor fact: pre-cure dominates independent/mid-size shops because of
