@@ -33,7 +33,7 @@ and the real, citable fact/trend/source the post should be built around.
 
 ## Next up (researched Aug 11, 2026 — real data, not guesses)
 
-- [ ] **Retread Tire Safety: What the TRIB/TIA Data Actually Shows**
+- [x] **Retread Tire Safety: What the TRIB/TIA Data Actually Shows**
       Keyword: "retread tire safety" (20/mo, competition 0.05 — low difficulty,
       Ubersuggest US, Aug 11 2026)
       Research angle: directly disarms the "retreads fail on the highway"
