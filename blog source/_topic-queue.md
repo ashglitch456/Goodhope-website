@@ -8,6 +8,13 @@ checks for in the repo itself.
 
 Each entry: topic, target keyword + real volume/difficulty (source and date),
 and the real, citable fact/trend/source the post should be built around.
+
+STANDING RULE — every post needs a visible image in two places:
+1. Its own hero image on the post page (blog/*.html), as already done.
+2. A thumbnail <img> on its card in blog.html's article grid — the grid
+   currently has NO images on any card (text-only), so when adding a new
+   post, also add an <img> to that post's card using its hero image, and
+   backfill thumbnails on existing cards that are missing one.
 -->
 
 ## Pending (already drafted content, not yet in the repo — do these first if missing)
