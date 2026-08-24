@@ -42,7 +42,7 @@ and the real, citable fact/trend/source the post should be built around.
       positions, don't paraphrase from memory. This is named as priority
       objection-handling content in the marketing manual (Section 9).
 
-- [ ] **Casing Inspection: The 5-Point Check Before Every Retread**
+- [x] **Casing Inspection: The 5-Point Check Before Every Retread**
       Keyword: "tire casing inspection" (low/no measured search volume — this
       is an authority-building piece, not a volume play; still worth doing
       because it's foundational to the cost-per-retread story every other
