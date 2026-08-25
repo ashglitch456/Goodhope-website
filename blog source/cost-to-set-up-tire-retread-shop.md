@@ -6,6 +6,15 @@ META TITLE: How Much Does It Cost to Set Up a Tire Retread Shop? (Canada & USA)
 
 META DESCRIPTION: A transparent, all-in CAD breakdown of what it really costs to equip a tire retread shop in North America — machinery, tooling, consumables, and startup considerations. Real numbers, no quote wall.
 
+NOTE: Bespoke hero image added in follow-up (this post originally shipped
+without an in-article hero, reusing about-tire-tread.jpg only in og:image).
+Canva returned a quota-limit error, so the hero
+(cost-to-set-up-tire-retread-shop-hero.png) was authored directly as a
+self-contained HTML/CSS graphic matching the site's existing hero style
+(dark background, orange accent, condensed uppercase headline, cost-category
+bar chart) and rendered to PNG locally. og:image and the JSON-LD image
+field now point to this bespoke hero too.
+
 INTERNAL LINKS: link "equipment buyer's guide" -> /blog/tire-retreading-equipment-buyers-guide.html ; link "electric curing chambers" -> /electric-curing-chamber.html
 
 -->

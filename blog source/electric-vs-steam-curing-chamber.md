@@ -6,6 +6,15 @@ META TITLE: Electric vs. Steam Curing Chambers: Which Is Right for Your Retread 
 
 META DESCRIPTION: An honest comparison of electric and steam curing chambers for tire retreading — setup cost, energy, footprint, and which suits your shop size. No sales spin.
 
+NOTE: Bespoke hero image added in follow-up (this post originally shipped
+without an in-article hero, reusing electric-curing-chamber-real.jpg only
+in og:image). Canva returned a quota-limit error, so the hero
+(electric-vs-steam-curing-chamber-hero.png) was authored directly as a
+self-contained HTML/CSS/SVG graphic matching the site's existing hero style
+(dark background, orange accent, condensed uppercase headline, electric
+bolt vs. steam-chamber icon comparison) and rendered to PNG locally.
+og:image and the JSON-LD image field now point to this bespoke hero too.
+
 INTERNAL LINKS:
 
   "curing chamber" / "electric curing chambers" -> /electric-curing-chamber.html

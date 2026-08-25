@@ -6,12 +6,13 @@ META TITLE: Retread Tire Safety: What the TRIB/TIA Data Actually Shows
 
 META DESCRIPTION: The federal debris study, TRIB/TIA's published position, and the DOT certification behind it — what actually determines whether a retread is safe.
 
-NOTE: No bespoke hero image this run — Canva hit its account quota limit
-(hard error, all retries failed) and Adobe's Express-export flow requires
-interactive account setup unsuited to this autonomous run, so it was not
-attempted beyond the initial check. og:image falls back to the existing
-site image intricate-tire-tread-with-glistening-surface.png. Flagged in the
-PR for human follow-up once Canva quota resets.
+NOTE: Hero image added in follow-up. Canva again hit its account quota
+limit, so the bespoke hero (retread-tire-safety-trib-tia-data-hero.png) was
+authored directly as a self-contained HTML/CSS/SVG graphic matching the
+site's existing hero style (dark background, orange accent, condensed
+uppercase headline, shield/checkmark icon, TRIB/TIA callouts) and rendered
+to PNG locally, rather than left on the generic fallback image. og:image
+and the JSON-LD image field now point to this bespoke hero too.
 
 INTERNAL LINKS:
 
