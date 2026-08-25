@@ -8,6 +8,19 @@ checks for in the repo itself.
 
 Each entry: topic, target keyword + real volume/difficulty (source and date),
 and the real, citable fact/trend/source the post should be built around.
+
+HARD RULE — every post ships with a real in-article hero image:
+Every post MUST include an in-article hero <img> (matching the existing
+site style: dark background, orange accent, condensed uppercase headline,
+thin-line icons — see any post in blog/ for the exact pattern), not just an
+og:image fallback pointing at a reused/generic site image. If Canva hits
+its quota or otherwise fails, do not publish without an image — retry, try
+Adobe as the documented one-attempt fallback, or, if both fail, author the
+hero directly as a self-contained HTML/CSS/SVG graphic in the same dark/
+orange/condensed-headline style and render it to PNG (chromium headless
+screenshot works for this in the sandboxed environment) rather than
+shipping the post with no bespoke image and a note asking a human to add
+one later.
 -->
 
 ## Pending (already drafted content, not yet in the repo — do these first if missing)

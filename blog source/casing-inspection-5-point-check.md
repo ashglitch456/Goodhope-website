@@ -6,16 +6,14 @@ META TITLE: Casing Inspection: The 5-Point Check Before Every Retread
 
 META DESCRIPTION: The five checks that decide whether a tire casing is fit to retread — nail-hole scanning, internal NDT, pressure testing, tread/DOT marking, and age — and what disqualifies one.
 
-NOTE: No bespoke hero image this run — Canva returned "User has reached
-their quota limit" on all 3 attempts (2 design types tried), same failure
-as the prior run (PR #12, Aug 18-23). Adobe was checked per the one-attempt
-policy: its HTML-design flow requires an interactive destination choice
-(Express document vs. standalone file via AskUserQuestion) that doesn't fit
-an unattended run producing one static PNG, so — matching the precedent
-already set in the merged retread-tire-safety-trib-tia-data.md — it wasn't
-pursued further. og:image falls back to the existing site image
-intricate-tire-tread-with-glistening-surface.png. Flagged in the PR for
-human follow-up once Canva quota resets.
+NOTE: Hero image added in follow-up. Canva again returned "User has reached
+their quota limit" (same failure as PR #12 and the initial draft of this
+post), so the bespoke hero (casing-inspection-5-point-check-hero.png) was
+authored directly as a self-contained HTML/CSS/SVG graphic matching the
+site's existing hero style (dark background, orange accent, condensed
+uppercase headline, thin-line numbered icons for the 5 checks) and
+rendered to PNG locally, rather than left on the generic fallback image.
+og:image and the JSON-LD image field now point to this bespoke hero too.
 
 INTERNAL LINKS:
 
