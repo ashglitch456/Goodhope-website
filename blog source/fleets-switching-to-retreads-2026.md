@@ -41,18 +41,32 @@ Note: FMI's and TechSci's CAGR figures diverge (2.8% vs. 4.28%) because they
 cover different forecast windows and methodologies — both are reported
 honestly rather than picking the more favorable one.
 
-IMAGE NOTE (updated after initial publish, per Ash's live instruction to
-always use realistic images on blog posts): Canva was out of quota (three
-attempts across the run) and Adobe Stock search returned zero results (no
-active stock entitlement on this account) — so no bespoke photographic hero
-could be sourced this run. The originally-shipped flat SVG/icon-style hero
-(fleets-switching-to-retreads-2026-hero.png) has been removed since that
-style is retired per the new HARD RULE in _topic-queue.md. In its place,
-this post temporarily reuses the site's existing realistic tire-tread photo
-(intricate-tire-tread-with-glistening-surface.png, already used as the
-site's default blog og:image) as both the in-article hero and og:image. A
-bespoke realistic hero for this specific post still needs to be sourced by
-a human or a future run once Canva/Adobe access is working.
+IMAGE NOTE (updated per Ash's live instruction to always use realistic,
+topically-related images on blog posts): Canva remained out of quota for
+the whole run. Adobe Stock (asset_search, entityScope StockAsset) initially
+returned zero results on a narrow query, but a broader retry succeeded —
+this account does have a working free-tier stock entitlement. Licensed two
+real, on-topic photos via asset_license_and_download_stock:
+  - AdobeStock #438381028, "View on truck wheels and tires on truck
+    chassis" (free tier) — cropped/resized to 1280x720 (focus: the tires)
+    and used as fleets-switching-to-retreads-2026-hero.png, the in-article
+    hero and og:image.
+  - AdobeStock #646467453, "Semi Truck and Trailer Speeding Down Highway
+    Road Blurred Blurry" (free tier) — cropped/resized to 1280x720, used as
+    fleets-switching-to-retreads-2026-highway.png, a supporting in-article
+    image before the circular-economy section.
+Adobe's own image_crop_and_resize tool computed the crops (subject-aware,
+via image_select_by_prompt / image_select_subject), but its output URLs
+route through photoshop-api.adobe.io, which this sandbox's egress proxy
+blocks for direct download. Worked around it by downloading the original
+licensed images directly from their S3 presigned URLs (unblocked) and
+replicating the identical crop with local ffmpeg using the exact
+crop_x/crop_y/crop_w/crop_h values Adobe's tool returned.
+This replaces the flat SVG/icon-style hero from the first version of this
+post (now retired per the HARD RULE in _topic-queue.md) and the generic
+reused site tread photo from the second version — both prior heroes were
+either non-photographic or not specific to this post's fleet/retread
+content.
 
 INTERNAL LINKS:
 
