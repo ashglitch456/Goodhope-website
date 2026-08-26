@@ -41,6 +41,19 @@ Note: FMI's and TechSci's CAGR figures diverge (2.8% vs. 4.28%) because they
 cover different forecast windows and methodologies — both are reported
 honestly rather than picking the more favorable one.
 
+IMAGE NOTE (updated after initial publish, per Ash's live instruction to
+always use realistic images on blog posts): Canva was out of quota (three
+attempts across the run) and Adobe Stock search returned zero results (no
+active stock entitlement on this account) — so no bespoke photographic hero
+could be sourced this run. The originally-shipped flat SVG/icon-style hero
+(fleets-switching-to-retreads-2026-hero.png) has been removed since that
+style is retired per the new HARD RULE in _topic-queue.md. In its place,
+this post temporarily reuses the site's existing realistic tire-tread photo
+(intricate-tire-tread-with-glistening-surface.png, already used as the
+site's default blog og:image) as both the in-article hero and og:image. A
+bespoke realistic hero for this specific post still needs to be sourced by
+a human or a future run once Canva/Adobe access is working.
+
 INTERNAL LINKS:
 
   "cost-per-mile" deep dive -> /blog/retreads-vs-new-tires-cost-per-mile.html
