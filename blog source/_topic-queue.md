@@ -64,7 +64,7 @@ one later.
       types, age, prior repair history) — needs real technical sourcing
       (TRIB/TIA/retread.org process documentation), not invented detail.
 
-- [ ] **Why More Fleets Are Switching to Retreads: The Cost & Circular Economy
+- [x] **Why More Fleets Are Switching to Retreads: The Cost & Circular Economy
       Case in 2026**
       Not a keyword play — a trend/news-hook piece.
       Research angle: cite current market growth data (Future Market Insights
