@@ -10,17 +10,59 @@ Each entry: topic, target keyword + real volume/difficulty (source and date),
 and the real, citable fact/trend/source the post should be built around.
 
 HARD RULE — every post ships with a real in-article hero image:
-Every post MUST include an in-article hero <img> (matching the existing
-site style: dark background, orange accent, condensed uppercase headline,
-thin-line icons — see any post in blog/ for the exact pattern), not just an
-og:image fallback pointing at a reused/generic site image. If Canva hits
-its quota or otherwise fails, do not publish without an image — retry, try
-Adobe as the documented one-attempt fallback, or, if both fail, author the
-hero directly as a self-contained HTML/CSS/SVG graphic in the same dark/
-orange/condensed-headline style and render it to PNG (chromium headless
-screenshot works for this in the sandboxed environment) rather than
-shipping the post with no bespoke image and a note asking a human to add
-one later.
+Every post MUST include an in-article hero <img>, not just an og:image
+fallback pointing at a reused/generic site image.
+
+HARD RULE — hero images must be realistic, not flat icon/vector graphics
+(per Ash's explicit instruction, Aug 2026):
+The hero must look like a real, photographic (or photo-real 3D-render)
+image — actual tires, casings, equipment, warehouse/shop scenes — dark
+moody industrial lighting with an orange accent, the way
+retreads-vs-new-tires-cost-per-mile-real.png looks. Do NOT ship a flat
+vector/icon graphic (text + thin-line icons on a solid background) as the
+hero — that style is retired; posts like casing-inspection-5-point-check-
+hero.png and electric-vs-steam-curing-chamber-hero.png predate this rule
+and should be treated as needing a realistic-image refresh when convenient,
+not as the pattern to copy.
+
+Images must also be topically related to the specific post, not a generic
+reused site photo swapped in as a placeholder — e.g. this post (fleets
+switching to retreads) uses a real photo of commercial trailer tires plus
+a real fleet-truck-on-highway photo, not the site's generic default tread
+close-up used elsewhere. Prefer more than one real, relevant photo per
+post where the content supports it (a hero plus one supporting in-article
+image), rather than a single reused stock shot.
+
+Sourcing order:
+1. Canva (primary) — ask for a realistic/photographic result explicitly in
+   the prompt, not an icon/vector poster.
+2. If Canva fails (quota, etc.), try Adobe Stock (asset_search,
+   entityScope StockAsset). Note (learned Aug 26 2026): this account DOES
+   have a working free-tier stock entitlement — an earlier run wrongly
+   assumed it had none after one narrow query (with contentType/orientation
+   /pricing filters combined) returned zero results. If a filtered query
+   returns zero, retry with a broader, simpler query (e.g. "semi truck
+   tires") before concluding Adobe Stock is unavailable. License with
+   asset_license_and_download_stock, then crop/resize with
+   image_crop_and_resize (subject-aware focus).
+   Known egress quirk: image_crop_and_resize's output URL is hosted on
+   photoshop-api.adobe.io, which the sandbox's outbound proxy blocks for
+   direct curl/WebFetch download. Workaround: download the ORIGINAL
+   licensed image from its S3 presigned URL (asset_license_and_download_
+   stock's downloadUrl — that host is not blocked) with curl, then
+   replicate the same crop locally using the crop_x/crop_y/crop_width/
+   crop_height values from image_crop_and_resize's metadata, via
+   `/opt/pw-browsers/ffmpeg-*/ffmpeg-linux` (note: this stripped ffmpeg
+   build needs `-f image2pipe -vcodec mjpeg -i pipe:0` piped input, not a
+   plain file path, to decode a JPEG).
+3. If both Canva and Adobe Stock genuinely fail (verified, not assumed),
+   do NOT fall back to a self-authored flat SVG/icon graphic — that
+   violates the realism rule above. Instead: publish the post with the
+   existing product/site photography as a temporary og:image only, clearly
+   flag in the PR description that the bespoke realistic hero is still
+   needed, and note which tool(s) failed and why. A human will supply or
+   approve the real image before merge. Do not invent a photo-real image by
+   hand-coding SVG shapes to look like a photo.
 -->
 
 ## Pending (already drafted content, not yet in the repo — do these first if missing)
@@ -64,7 +106,7 @@ one later.
       types, age, prior repair history) — needs real technical sourcing
       (TRIB/TIA/retread.org process documentation), not invented detail.
 
-- [ ] **Why More Fleets Are Switching to Retreads: The Cost & Circular Economy
+- [x] **Why More Fleets Are Switching to Retreads: The Cost & Circular Economy
       Case in 2026**
       Not a keyword play — a trend/news-hook piece.
       Research angle: cite current market growth data (Future Market Insights
