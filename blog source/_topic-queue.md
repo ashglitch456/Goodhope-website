@@ -117,3 +117,236 @@ Sourcing order:
       verbatim, since they should be re-verified as current when the post is
       written. Tie to fleet cost-per-mile pressure and the sustainability
       angle (no new casing manufactured per retread cycle).
+
+## Researched Aug 27, 2026 — 18-topic batch to sustain daily posting
+(All facts below were web-researched this date via parallel research passes.
+Re-verify each is still current at write-time per the routine's research
+standard — treat what's here as a strong starting anchor, not a substitute
+for a fresh check. Topics flagged NEEDS SOFTER FRAMING have no single
+named-authority (TRIB/TIA) source and must be written with the caveat
+intact, not upgraded into a harder claim than the source supports.)
+
+- [ ] **Buffing Machines & Blades: Getting Buffing Texture and Radius Right**
+      Keyword: "tire retread buffing texture standard" (no measured volume
+      this round — Ubersuggest daily quota was exhausted; re-check when
+      quota resets)
+      Anchor fact: TIA/TRIB's Tread Rubber & Tire Repair Materials
+      Manufacturers' Group (TRMG) publishes RP-01-01 "Tire Profiling for
+      Retreading" on tireindustry.org, setting buff radius/crown-width by
+      tire size — e.g. Double Coin's published TBR retread spec sheet calls
+      for a 26" buff radius (7"/178mm max width) on a 215/75R17.5. Cite the
+      RP-01-01 doc and the manufacturer spec sheet directly.
+
+- [ ] **How Ontario's Tire Recycling Regulations Shape the Retread Business
+      Case**
+      Keyword: "Ontario tire recycling regulations" (no measured volume
+      this round)
+      Anchor fact: Effective Jan 1 2025, RPRA-administered amendments to
+      Ontario's Tires Regulation (under the RRCEA) cut the tire management
+      requirement from 85% to 65% (60% for large tires) through 2029,
+      rising to 70%/60% from 2030. Source: RPRA, "Summary of recent
+      amendments to Ontario's Tires Regulation," March 2025 — verify no
+      further amendment has landed before publishing.
+
+- [ ] **Curing Envelopes Explained: Inner vs. Outer, and Why Vacuum
+      Integrity Matters**
+      Keyword: "curing envelope tire retreading vacuum" (no measured
+      volume this round)
+      Anchor fact: in pre-cure/envelope retreading, a vacuum is drawn
+      between the inner/outer envelopes and the tire before autoclave cure
+      specifically to prevent trapped air/steam pockets that cause
+      incomplete cushion-gum cure and bond failure — sourced from
+      retreading-apparatus patent literature (US6261409, US5007978).
+      Cross-check against TRIB's own mold-cure-vs-pre-cure process page at
+      write time if it's reachable.
+
+- [ ] **Preventing Zipper Failures and Casing Separation: The Equipment
+      Side of Retread Safety**
+      Keyword: "tire zipper rupture retreading inspection" (no measured
+      volume this round)
+      Anchor fact: USTMA's Tire Information Service Bulletin TISB Vol. 33
+      directs retreaders to reject any casing with upper-sidewall
+      ripples/bulges/porosity/softness and to use non-destructive testing
+      (shearography, x-ray) plus a post-cure pressure test before a casing
+      re-enters service. Source: ustires.org, TISB 33 PDF. Differentiate
+      this from the existing retread-tire-safety-trib-tia-data and
+      casing-inspection-5-point-check posts by focusing specifically on
+      inspection equipment/technology — cross-link both rather than
+      re-covering the same ground.
+
+- [ ] **Bonding Cement & Cushion Gum: What the Application Standard
+      Actually Requires**
+      Keyword: "cushion gum application retreading" (no measured volume
+      this round)
+      Anchor fact: TIA's TRMG maintains a named recommended practice,
+      "Classification and Application of Cushion Gum" (tireindustry.org),
+      governing cushion-gum grade and application procedure. Cite the
+      standard's existence/title as the authority hook — do NOT state a
+      specific cure time/temperature number, since none was verifiable
+      from a public non-paywalled source this round; point readers to
+      manufacturer cure charts instead.
+
+- [ ] **OTR Retreading: Why Mining and Construction Fleets Are a Different
+      Market**
+      Keyword: "OTR tire retreading mining" (no measured volume this
+      round)
+      Anchor fact: a single giant mining tire (e.g. 59/80R63 for
+      ultra-class haul trucks) costs roughly $35,000-$42,000 new (Modern
+      Tire Dealer, "Big Horn Tire" feature) — an order of magnitude past
+      truck/bus tire economics. Global Market Insights' OTR Tire Market
+      report notes mining/industrial fleets increasingly retread
+      specifically to stretch casing life given that cost.
+
+- [ ] **Skiving Stations: Why Repair Prep Determines Bond Strength**
+      Keyword: "tire skive repair procedure standard" (no measured volume
+      this round)
+      Anchor fact: TIA-aligned repair training standards cap puncture
+      repairs at 1/4" (6mm), require two-piece repairs above a 25° injury
+      angle, and specify a cupped "Y"-type 90° skive through steel belts
+      for crown repairs. Cite TechTireRepairs' and PREMA's published
+      training guides plus TIA/tireindustry.org glossary material.
+
+- [ ] **Retreading Regulations in Canada: What CVSA Roadside Inspection
+      Actually Requires**
+      Keyword: "CVSA out of service criteria retread tires Canada" (no
+      measured volume this round)
+      Anchor fact: CVSA's 2025 International Roadcheck made tires the
+      year's inspection focus — 2,899 tire-related out-of-service
+      violations, 21.4% of all vehicle OOS violations (cvsa.org, May
+      2025); CVSA's North American OOS Criteria set steer-axle tread
+      depth at 2/32" vs 1/32" elsewhere. IMPORTANT CAVEAT: the "no
+      retreads on steer axles" rule is a US FMCSR rule (49 CFR 393.75),
+      NOT a Transport Canada rule — Transport Canada's framework (SOR/2013
+      -198, TSD 120) governs manufacture/import, and Ontario roadside
+      enforcement runs through O.Reg 199/07 plus the CVSA standard. The
+      post must reflect this precisely and never claim Transport Canada
+      bans retreads on steer axles.
+
+- [ ] **White Oxide Stones & Finishing Abrasives: Meeting the Industry
+      Buff-Texture Standard**
+      Keyword: "tire buffing texture standards" (no measured volume this
+      round)
+      Anchor fact: TRMG's RP-01/02-23 ("BTS6") defines six
+      industry-approved buff-texture classifications used across
+      retread/repair, jointly hosted by TRIB and TIA (tireindustry.org) —
+      corroborated by Tire Review and Tire Business 2020 coverage of the
+      standard's update. (Note: the Buffing Machines & Blades post above
+      leans on RP-01-01 buff-radius specs — keep these two posts'
+      citations distinct rather than both centering on BTS6.)
+
+- [ ] **Small Consumables That Make or Break a Retread: Flaps, Stems, and
+      Seals**
+      Keyword: "tire flap failure retread" (no measured volume this
+      round)
+      Anchor fact: OSHA's "Servicing Multi-Piece and Single-Piece Rim
+      Wheels" (OSHA 3584) states rim-wheel-servicing hazards are "greatly
+      increased" on multi-piece rims and tires inflated to 45+ psi, with
+      failures capable of causing fatal injury (29 CFR 1910.177/
+      1917.44(o)). Build the post around this verified safety-compliance
+      angle — a TRIB-specific casing-rejection failure-rate stat was
+      searched for but not found publicly this round, so don't invent one.
+
+- [ ] **Camelback Tread Rubber: Compound and Tread Pattern Selection for
+      Precure Retreading**
+      Keyword: "camelback tread rubber precure retreading" (no measured
+      volume this round)
+      Anchor fact: pre-cure remains the dominant retread process — Future
+      Market Insights' "Retread Tire Market" report and Market.us both
+      track pre-cure's continued majority share of the process segment,
+      though exact share figures vary by vendor (one cites ~68%, another
+      ~61%). Cite one specific named report and its stated figure — don't
+      average conflicting vendor numbers into a single "consensus" claim.
+
+- [ ] **Retread Warranty Basics: What Voids Coverage and What Doesn't**
+      Keyword: "retread tire warranty" (no measured volume this round)
+      Anchor fact: Bandag/Bridgestone's current Limited Lifetime National
+      Warranty covers workmanship/material defects for the life of the
+      tread but caps casing-defect coverage at just two years, separate
+      from lifetime tread coverage (commercial.bridgestone.com PDF).
+      Frame as "what a major retreader's actual current warranty document
+      says," not as TIA-authored policy — no single TIA warranty fact
+      sheet was found.
+
+- [ ] **Dust Collection & Shop Air Quality: Combustible Dust Compliance
+      for Retreaders**
+      Keyword: "combustible dust tire buffing NFPA" (no measured volume
+      this round)
+      Anchor fact: OSHA's Combustible Dust National Emphasis Program (CPL
+      03-00-006) flags rubber buffing/grinding dust as a fire/
+      deflagration hazard under NFPA 654 guidance — a dust layer just
+      1/32" thick over 5% of a room's surfaces can fuel a secondary
+      explosion. CCOHS provides the parallel Canadian housekeeping
+      guidance (wet methods/approved vacuums only, no dry sweeping or
+      compressed air).
+
+- [ ] **Choosing a Retread Equipment Supplier: An Evaluation Checklist**
+      Keyword: "retread equipment supplier" (no measured volume this
+      round)
+      Anchor fact: precure retreading lines run roughly 20-30% lower
+      capital cost than full mold-cure setups, which is why precure is
+      projected to hold ~67% of the process-method market in 2026 even as
+      mold-cure gains ground on a 5.88% CAGR from improved automated
+      presses (The Business Research Company's "Tire Curing Press Market
+      Report 2025," cross-checked against Mordor Intelligence). Cite as
+      industry market analysis, not a trade-body standard; never name a
+      specific competitor or cite private pricing.
+
+- [ ] **Rasp Blade Design: Why Radial Casings Buff Differently Than
+      Bias-Ply**
+      Keyword: "rasp blade radial vs bias tire retread" (no measured
+      volume this round)
+      NEEDS SOFTER FRAMING — no TIA/TRIB document formally codifies rasp
+      type by casing construction. The citable material is engineering
+      rationale: rasp-blade patents (US6789982, WO2004024382A1) and
+      manufacturer literature (B&J Rocket's channel-cooled "Super Cool"
+      blades) explain that radial casings' steel-belt exposure during
+      buffing generates more frictional heat than bias-ply, driving
+      blade-geometry/cooling differences that protect bond quality. Write
+      this as engineering rationale, never as an "official standard."
+
+- [ ] **Preventive Maintenance Schedules for Curing Chambers and Buffing
+      Machines**
+      Keyword: "curing chamber preventive maintenance schedule" (no
+      measured volume this round)
+      NEEDS SOFTER FRAMING — no TRIB/TIA-published PM schedule specific to
+      retread curing chambers/buffers was found. Usable substitutes:
+      Melion Industry's published curing-chamber user instructions (daily
+      door-seal cleaning, monthly locking-ring re-greasing, periodic
+      pressure-bleed-valve checks) plus general manufacturing
+      downtime-cost data (Aberdeen Research: ~$260K/hour average
+      unplanned downtime across manufacturing). Disclose these as
+      illustrative examples, not an industry-wide retread standard.
+
+- [ ] **How Many Times Can a Truck Tire Casing Be Retreaded? Casing
+      Life-Cycle Economics**
+      Keyword: "how many times can a tire be retreaded" (no measured
+      volume this round)
+      Anchor fact: TRIB/retread.org states long-haul casings typically go
+      2-3 retread cycles (short-haul/local casings 5+ with proper
+      maintenance); two cycles roughly triples a casing's productive
+      output vs. one, three cycles roughly quadruples it; retreads
+      typically sell for 30-50% of a comparable new tire (as low as ~25%
+      on a fleet-supplied casing); retreading saves the US trucking
+      industry over $3B annually. Cite retread.org's "Learn More" page
+      directly, corroborated by Bandag/Bridgestone's "Cost & Savings of
+      Retread Tires" page. Differentiate from the existing
+      retreads-vs-new-tires-cost-per-mile post (that one's about
+      cost-per-mile comparison; this one's about cycle-count economics) —
+      cross-link both.
+
+- [ ] **The Retread Investment Case: What the Cost-Savings Data Actually
+      Shows**
+      Keyword: "retread equipment payback period ROI" (no measured volume
+      this round)
+      NEEDS SOFTER FRAMING — no trade-press or industry source gave a
+      sourced, retread-equipment-specific payback-period figure (the
+      "1-3 year payback" numbers that surface in search trace to generic
+      equipment-ROI-calculator sites, not retread-specific research — do
+      not cite those). What is well-sourced: USTMA states retreads
+      typically cost 30-50% less than comparable new tires, and ~15M
+      tires are retreaded annually in the US supporting ~51,000 jobs in a
+      ~268,000-job tire ecosystem (ustires.org/tire-retreading); real
+      named capex activity exists too (Bridgestone's ~$60M Abilene Bandag
+      retread-plant expansion, per Tire Business capex coverage). Build
+      the ROI case around these verified cost/scale figures, never an
+      invented payback-period number.
