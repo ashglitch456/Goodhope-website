@@ -37,11 +37,13 @@ principle (avoid exposing steel belts) rather than inventing a figure.
 
 ## Image
 
-Adobe Stock asset 663256969 ("Professional truck mechanic working in
-vehicle repair service") — licensed, downloaded, cropped to 1280x720 via
-ffmpeg. A literal buffing-machine-in-action photo was not available in
-the stock library searched (several targeted queries returned zero or
-only generic passenger-tire-shop results); this real photo of hands-on
-commercial-truck-tire shop work was used as the closest credible stand-in
-per the site's realism rule. Canva unavailable this run (connector
-unauthenticated, no OAuth flow available in this session).
+Original hero (Adobe Stock asset 663256969, "Professional truck mechanic
+working in vehicle repair service") was replaced at Ash's request with a
+simpler image — the busy mechanic/garbage-truck scene had too much going
+on and wasn't a clean fit. Swapped to Adobe Stock asset 361794350 ("Old
+used weared car and truck wheels tyres pile stacked in rows stored for
+recycling") — a clean, uncluttered close-up of stacked worn tire casings
+and tread, no people or extraneous branding, directly on-topic for a
+casing-prep post. Licensed, downloaded, cropped to 1280x720 via ffmpeg.
+Canva unavailable this run (connector unauthenticated, no OAuth flow
+available in this session).
