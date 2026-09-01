@@ -23,6 +23,20 @@ operations or Good Hope's pricing either way; (4) meta description updated
 to lead with "U.S. federal bill... U.S. purchasers only." Pushed as a second
 commit on the same PR #24 branch.
 
+STANDING RULE (added same run, applies to all future posts): Ash asked that
+blog content never portray political opinion or bias toward a region/
+country — stay neutral. Applied here by rewriting the "The bill: H.R.3401 /
+S.2790" paragraph to drop party-affiliation labels (R-IL-16, D-OH, R-OH,
+R-KS) and the partisan cosponsor headcount ("seven Republicans and two
+Democrats"), replacing with neutral phrasing ("cosponsors from lawmakers
+across both major parties") — names, dates, committees, and bill numbers
+kept since those are neutral facts, not opinion. No other political framing
+found elsewhere in this post or in casing-ownership-in-house-retread-
+control.html (that post doesn't touch politics/region). Going forward:
+avoid party labels, partisan headcounts, and any language that reads as
+taking a side on a policy debate; report legislation by what it does, who
+sponsored it (names only), and its status, not by political framing.
+
 SOURCES (all found via web search this run, Aug 31/Sep 1 2026):
 1. Bill identity, sponsor, introduction date, committee referral: H.R.3401,
    "Retreaded Tire Jobs, Supply Chain Security and Sustainability Act of 2025,"
