@@ -12,6 +12,17 @@ tax credit currently exists. No brand rule issue here (this is a Pillar B
 news/policy piece, not Pillar C), but flagging per the fact-check standard:
 every figure below is re-verified fresh this run, not reused from a prior post.
 
+UPDATE (post-review, same run): Ash flagged that the post should call out
+this is U.S.-only legislation, since Good Hope is an Ontario-based supplier
+with a Canadian/international readership. Added: (1) an explicit "and it's
+U.S.-only" clause to the opening disclaimer paragraph, spelling out it has no
+bearing on Canadian tax law, procurement, or purchases; (2) a new bullet
+under "What it would actually do" — "Apply only to U.S. purchasers"; (3) a
+line in the closing CTA clarifying the credit doesn't affect Canadian
+operations or Good Hope's pricing either way; (4) meta description updated
+to lead with "U.S. federal bill... U.S. purchasers only." Pushed as a second
+commit on the same PR #24 branch.
+
 SOURCES (all found via web search this run, Aug 31/Sep 1 2026):
 1. Bill identity, sponsor, introduction date, committee referral: H.R.3401,
    "Retreaded Tire Jobs, Supply Chain Security and Sustainability Act of 2025,"
