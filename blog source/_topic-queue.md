@@ -63,6 +63,23 @@ Sourcing order:
    needed, and note which tool(s) failed and why. A human will supply or
    approve the real image before merge. Do not invent a photo-real image by
    hand-coding SVG shapes to look like a photo.
+
+HARD RULE — always surface the Cloudflare Pages preview link (added Sep 2
+2026, per Ash's explicit instruction):
+Every PR triggers a Cloudflare Pages build that posts an automatic comment
+on the PR from cloudflare-workers-and-pages[bot] with a "Preview URL" (per-
+commit hash) and a "Branch Preview URL" (format:
+https://<branch-slug>.goodhope-website.pages.dev — stable for that branch,
+so prefer it over the per-commit one). After opening each PR:
+1. Read the PR's comments (pull_request_read, method get_comments) to find
+   that bot comment and pull out its Branch Preview URL. It's usually
+   posted within ~30-60 seconds of the push; if it hasn't landed yet, check
+   again later in the same run rather than skipping it.
+2. Include that branch preview link in the PR description itself (not just
+   the GitHub PR URL), so a reviewer can click straight through to the live
+   rendered page.
+3. Include it again in the end-of-run summary/notification to Ash, next to
+   each PR URL — never report a PR as done with only the GitHub link.
 -->
 
 ## Pending (already drafted content, not yet in the repo — do these first if missing)
