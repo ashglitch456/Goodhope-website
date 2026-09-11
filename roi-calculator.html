@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<title>Retread Savings Calculator | Cost Per Retread vs. New Tires</title>
+<link rel="canonical" href="https://www.goodhoperetreaders.com/roi-calculator">
+<meta name="description" content="Estimate what retreading could save your shop or fleet versus buying new tires — based on your own numbers and the published industry cost range. Transparent math, no quote wall.">
+<meta property="og:title" content="Retread Savings Calculator | Cost Per Retread vs. New Tires">
+<meta property="og:description" content="Estimate what retreading could save your shop or fleet versus buying new tires — based on your own numbers and the published industry cost range. Transparent math, no quote wall.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.goodhoperetreaders.com/roi-calculator">
+<meta property="og:image" content="https://www.goodhoperetreaders.com/retreads-vs-new-tires-cost-per-mile-real.png">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+   "@context" : "https://schema.org",
+   "@type" : "BreadcrumbList",
+   "itemListElement" : [
+      {
+         "@type" : "ListItem",
+         "position" : 1,
+         "name" : "Home",
+         "item" : "https://www.goodhoperetreaders.com/"
+      },
+      {
+         "@type" : "ListItem",
+         "position" : 2,
+         "name" : "Retread Savings Calculator",
+         "item" : "https://www.goodhoperetreaders.com/roi-calculator"
+      }
+   ]
+}
+</script>
+<style>
+body { margin: 0; background: #F7F5F1; }
+img[style*="contain"] { background: #fff; }
+::selection { background: #E8631C; color: #fff; }
+a { color: #E8631C; text-decoration: none; }
+a:hover { color: #C24F12; }
+
+    body { margin: 0; background: #F7F5F1; }
+    ::selection { background: #E8631C; color: #fff; }
+    a { color: #E8631C; text-decoration: none; }
+    a:hover { color: #C24F12; }
+    .calc-field { display: flex; flex-direction: column; gap: 7px; }
+    .calc-field label { font-size: 13px; font-weight: 600; color: #1B1A19; letter-spacing: 0.2px; }
+    .calc-field .hint { font-size: 12px; color: #8A867D; font-weight: 400; line-height: 1.5; }
+    .calc-input, .calc-select {
+      padding: 13px 14px; border: 1px solid #D8D4CC; border-radius: 4px;
+      font-size: 16px; font-family: 'Inter', sans-serif; color: #1B1A19; background: #fff;
+      width: 100%; box-sizing: border-box;
+    }
+    .calc-input:focus, .calc-select:focus { outline: 2px solid #E8631C; outline-offset: 0; border-color: #E8631C; }
+    .calc-inputwrap { position: relative; }
+    .calc-inputwrap .cur-prefix {
+      position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+      font-size: 15px; color: #8A867D; pointer-events: none;
+    }
+    .calc-inputwrap .calc-input.has-prefix { padding-left: 30px; }
+    .result-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E6E2DA; flex-wrap: wrap; }
+    .result-row:last-child { border-bottom: none; }
+    .result-label { font-size: 14px; color: #6E6A62; line-height: 1.5; }
+    .result-value { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 20px; color: #1B1A19; white-space: nowrap; text-align: right; }
+    .result-value.big { font-size: 26px; color: #E8631C; }
+    @media (max-width: 480px) {
+      .result-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .result-value { text-align: left; white-space: normal; word-break: break-word; }
+    }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4RK89Q5V8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q4RK89Q5V8');
+</script>
+</head>
+<body>
+
+<div style="font-family: 'Inter', sans-serif; color: #1B1A19; background: #F7F5F1; width: 100%; min-height: 100vh;">
+<header style="position: sticky; top: 0; z-index: 100; background: #1B1A19; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 14px 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); box-sizing: border-box;">
+<div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
+<a href="#" onclick="history.back(); return false;" style="display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:#2A2926; color:#fff; font-size:17px; flex-shrink:0; line-height:1; cursor:pointer;" title="Go back">←</a>
+<a href="index.html" style="display:flex; align-items:center; gap:10px; line-height: 1; flex-shrink: 0;">
+<svg fill="none" height="34" style="flex-shrink:0;" viewBox="0 0 34 34" width="34" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="17" r="14.5" stroke="#E8631C" stroke-width="3"></circle>
+<circle cx="17" cy="17" fill="#E8631C" r="5.5"></circle>
+<g stroke="#E8631C" stroke-linecap="round" stroke-width="3">
+<line x1="17" x2="17" y1="1.5" y2="6.5"></line>
+<line x1="17" x2="17" y1="27.5" y2="32.5"></line>
+<line x1="1.5" x2="6.5" y1="17" y2="17"></line>
+<line x1="27.5" x2="32.5" y1="17" y2="17"></line>
+</g>
+</svg>
+<span style="display:flex; flex-direction:column;">
+<span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 19px; color: #fff; letter-spacing: 0.3px; white-space: nowrap;">GOOD HOPE</span>
+<span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 11px; color: #E8631C; letter-spacing: 2.5px;">RETREADERS</span>
+</span>
+</a>
+</div>
+<nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; flex: 1 1 auto; min-width: 0; justify-content: center;">
+<a href="index.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Home</a>
+<a href="machinery.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Machinery</a>
+<a href="consumables.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Consumables</a>
+<a href="components.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Components</a>
+<a href="repair-tools.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Repair Tools</a>
+<a href="blog.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Blog</a>
+<a href="roi-calculator.html" style="color: #E8631C; font-weight: 600; font-size: 13.5px; border-bottom: 2px solid #E8631C; padding-bottom: 4px; white-space: nowrap;">Savings Calculator</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; flex-shrink: 0;">
+<a href="tel:+14379885132" style="color: #fff; font-weight: 600; font-size: 13.5px; white-space: nowrap;">+1 (437) 988-5132</a>
+<a href="#pricing" style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.3px; padding: 11px 16px; border-radius: 3px; white-space: nowrap;" style-hover="background: #C24F12; color: #fff;">REQUEST A QUOTE</a>
+</div>
+</header>
+
+<!-- PAGE HERO -->
+<section style="background: #1B1A19; padding: 64px clamp(16px, 5vw, 48px) 56px clamp(16px, 5vw, 48px);">
+<div style="max-width: 1280px; margin: 0 auto;">
+<p style="font-size: 13px; color: #8A867D; margin: 0 0 14px 0;"><a href="index.html" style="color: #8A867D;">Home</a> / <span style="color: #D8D4CC;">Savings Calculator</span></p>
+<span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">SAVINGS CALCULATOR</span>
+<h1 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 40px; color: #fff; margin: 12px 0 14px 0;">What Could Retreading Save You vs. Buying New?</h1>
+<p style="font-size: 16px; color: #B9B5AC; line-height: 1.7; max-width: 680px; margin: 0;">Put in your own numbers — how many tires you retread a month and what a comparable new tire costs you — and this tool estimates your cost per retread and your savings, using the published industry range. It's a general estimate, not a quote.</p>
+</div>
+</section>
+
+<!-- CALCULATOR -->
+<section style="padding: 64px clamp(16px, 5vw, 48px); max-width: 1080px; margin: 0 auto;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; align-items: start;">
+
+<!-- INPUTS -->
+<div style="background: #fff; border: 1px solid #E6E2DA; border-radius: 10px; padding: 32px; border-top: 4px solid #E8631C;">
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 20px; margin: 0 0 22px 0;">Your numbers</h2>
+<div style="display: flex; flex-direction: column; gap: 20px;">
+
+<div class="calc-field">
+<label for="calc-currency">Currency</label>
+<select id="calc-currency" class="calc-select">
+<option value="CAD" selected>CAD — Canadian dollar</option>
+<option value="USD">USD — US dollar</option>
+<option value="EUR">EUR — euro</option>
+<option value="GBP">GBP — pound sterling</option>
+</select>
+<span class="hint">Good Hope quotes in CAD. Other currencies use fixed approximate rates, for illustration only, as of September 2026.</span>
+</div>
+
+<div class="calc-field">
+<label for="calc-segment">Tire segment</label>
+<select id="calc-segment" class="calc-select">
+<option value="tbr" selected>Truck / Bus Radial</option>
+<option value="otr">OTR (off-the-road)</option>
+<option value="plt">Passenger / Light Truck</option>
+</select>
+<span class="hint" id="calc-segment-note">Sets the example figures below — the math uses only the numbers you enter.</span>
+</div>
+
+<div class="calc-field">
+<label for="calc-count">Tires retreaded per month</label>
+<input id="calc-count" class="calc-input" type="number" inputmode="numeric" min="1" step="1" placeholder="e.g. 40">
+<span class="hint">How many you retread now, or plan to once your line is running.</span>
+</div>
+
+<div class="calc-field">
+<label for="calc-newprice">Price you pay for a comparable new tire</label>
+<div class="calc-inputwrap">
+<span class="cur-prefix" id="calc-newprice-prefix">$</span>
+<input id="calc-newprice" class="calc-input has-prefix" type="number" inputmode="decimal" min="0" step="1" placeholder="e.g. 550">
+</div>
+<span class="hint">Your own replacement cost for the equivalent new tire. Example figures are illustrative, not Good Hope prices.</span>
+</div>
+
+<div class="calc-field">
+<label for="calc-retread">What you currently pay per retread <span style="font-weight:400; color:#8A867D;">(optional)</span></label>
+<div class="calc-inputwrap">
+<span class="cur-prefix" id="calc-retread-prefix">$</span>
+<input id="calc-retread" class="calc-input has-prefix" type="number" inputmode="decimal" min="0" step="1" placeholder="leave blank to use the industry range">
+</div>
+<span class="hint">If you already retread and know your cost, add it for a second comparison against your own number.</span>
+</div>
+
+<button id="calc-go" type="button" style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 15px; border: none; border-radius: 4px; cursor: pointer; margin-top: 2px;" style-hover="background: #C24F12; color: #fff;">Calculate my estimate</button>
+<p id="calc-error" style="display:none; margin: 0; font-size: 13px; color: #C24F12;"></p>
+</div>
+</div>
+
+<!-- RESULTS -->
+<div id="calc-results" style="display:none; background: #F0EEE8; border: 1px solid #E6E2DA; border-radius: 10px; padding: 32px;">
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 20px; margin: 0 0 6px 0;">Your estimate</h2>
+<p style="font-size: 13px; color: #8A867D; margin: 0 0 20px 0;">A range, not a single figure — retreading cost varies by casing, tread and process.</p>
+
+<div class="result-row">
+<span class="result-label">Estimated cost per retread<br><span style="font-size:12px; color:#8A867D;">at 30–50% of your new-tire price</span></span>
+<span class="result-value" id="r-perretread">—</span>
+</div>
+<div class="result-row">
+<span class="result-label">Estimated saving per tire<br><span style="font-size:12px; color:#8A867D;">vs. buying that tire new</span></span>
+<span class="result-value" id="r-pertire">—</span>
+</div>
+<div class="result-row">
+<span class="result-label">Estimated saving per month<br><span style="font-size:12px; color:#8A867D;" id="r-permonth-basis">across your monthly volume</span></span>
+<span class="result-value" id="r-permonth">—</span>
+</div>
+<div class="result-row">
+<span class="result-label">Estimated saving per year</span>
+<span class="result-value big" id="r-peryear">—</span>
+</div>
+
+<p id="r-plain" style="font-size: 14px; color: #3F3B36; line-height: 1.7; margin: 20px 0 0 0;"></p>
+
+<div id="r-ownblock" style="display:none; margin-top: 20px; padding-top: 18px; border-top: 1px dashed #C9C4BA;">
+<p style="font-size: 13px; font-weight: 600; color: #1B1A19; margin: 0 0 10px 0;">Against the retread cost you entered</p>
+<div class="result-row">
+<span class="result-label">Saving per tire vs. new</span>
+<span class="result-value" id="r-own-pertire">—</span>
+</div>
+<div class="result-row">
+<span class="result-label">Saving per year</span>
+<span class="result-value" id="r-own-peryear">—</span>
+</div>
+<p id="r-own-note" style="font-size: 13px; color: #6E6A62; line-height: 1.6; margin: 12px 0 0 0;"></p>
+</div>
+</div>
+
+</div>
+
+<!-- METHODOLOGY -->
+<div style="margin-top: 36px; background: #fff; border: 1px solid #E6E2DA; border-radius: 10px; padding: 28px 32px;">
+<h3 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 16px; margin: 0 0 12px 0;">How this is calculated</h3>
+<ul style="margin: 0; padding: 0 0 0 18px; font-size: 14px; color: #6E6A62; line-height: 1.8;">
+<li>The <strong>Tire Retread &amp; Repair Information Bureau (TRIB)</strong> states that a retreaded tire "sells for less — usually between <strong>30 and 50 percent</strong> of the comparable new tire price." This tool applies that 30–50% band to the new-tire price you enter.</li>
+<li><strong>Cost per retread</strong> = your new-tire price &times; 30% to 50%.</li>
+<li><strong>Saving per tire</strong> = your new-tire price &minus; the estimated retread cost (i.e. 50% to 70% of the new-tire price).</li>
+<li><strong>Per month</strong> = saving per tire &times; the number of tires you enter. <strong>Per year</strong> = per month &times; 12.</li>
+<li>If you enter your own current retread cost, the second panel compares that figure directly to your new-tire price instead of the industry band.</li>
+<li>Non-CAD currencies are shown with fixed approximate rates (1&nbsp;CAD&nbsp;&approx;&nbsp;0.73&nbsp;USD&nbsp;&approx;&nbsp;0.67&nbsp;EUR&nbsp;&approx;&nbsp;0.57&nbsp;GBP), for illustration only, as of September&nbsp;2026. All figures in this calculator stay in the currency you pick — no conversion is applied to the savings math.</li>
+</ul>
+<p style="font-size: 13px; color: #8A867D; line-height: 1.7; margin: 16px 0 0 0;">
+Source: Tire Retread &amp; Repair Information Bureau, <a href="https://www.retread.org/learn-more" rel="nofollow noopener" target="_blank">"Learn More" — retread.org/learn-more</a> (accessed September&nbsp;2026). The 30–50% range is an industry-standard figure, not a Good Hope-specific offer. This calculator is a general estimate based on the numbers you enter — not a quote, and it does not represent a Good Hope product price.
+</p>
+</div>
+
+</section>
+
+<!-- CTA / LEAD CAPTURE -->
+<section id="pricing" style="background: #1B1A19; padding: 96px clamp(16px, 5vw, 48px);">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 64px;">
+<div>
+<span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">MAKE IT REAL</span>
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 34px; color: #fff; margin: 12px 0 20px 0;">Want Good Hope's Exact Manufacturer-Direct Pricing?</h2>
+<p style="font-size: 16px; color: #B9B5AC; line-height: 1.7; margin: 0 0 28px 0;">The estimate above uses an industry range. For the real number — what the equipment, tread rubber and consumables to retread in-house actually cost, manufacturer-direct with transparent all-in Canadian pricing and no dealer markup — send us your volume and tire sizes. We'll come back within 24 hours.</p>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<a href="tel:+14379885132" style="color: #fff; font-weight: 600; font-size: 16px;">📞 +1 (437) 988-5132</a>
+<a href="https://wa.me/14379885132" style="color: #fff; font-weight: 600; font-size: 16px;">💬 WhatsApp Us</a>
+<a href="mailto:ashwin@goodhoperetreaders.com" style="color: #fff; font-weight: 600; font-size: 16px;">✉️ ashwin@goodhoperetreaders.com</a>
+</div>
+</div>
+<div style="background: #F7F5F1; border-radius: 8px; padding: 36px;">
+
+<form method="POST" action="https://formspree.io/f/xgogwkjz" style="display: flex; flex-direction: column; gap: 14px;">
+<input name="name" placeholder="Full Name (optional)" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text">
+<input name="email" placeholder="Email Address" required style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="email"/>
+<input name="company" placeholder="Company / Workshop Name (optional)" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text">
+<input name="_subject" type="hidden" value="ROI calculator — manufacturer-direct pricing request — Good Hope Retreaders"/>
+<input name="interest" type="hidden" value="ROI calculator"/>
+<input name="calc_summary" type="hidden" value=""/>
+<button style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 4px;" style-hover="background: #C24F12; color: #fff;" type="submit">Send me the real pricing</button>
+<p style="font-size: 12px; color: #8A867D; line-height: 1.6; margin: 2px 0 0 0;">We'll only use this to send you pricing and follow up. No newsletter, no list.</p>
+</form>
+<script>
+(function(){
+  var form = document.querySelector('form[action*="formspree.io/f/xgogwkjz"]');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var originalText = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    var summaryEl = form.querySelector('[name="calc_summary"]');
+    if (summaryEl && typeof window.goodhopeCalcSummary === 'function') { summaryEl.value = window.goodhopeCalcSummary(); }
+    var data = new FormData(form);
+    fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } }).then(function(response){
+      if (response.ok) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'qualify_lead', {
+            'form_location': window.location.pathname,
+            'interest': (form.querySelector('[name="interest"]') || {}).value || ''
+          });
+        }
+        form.innerHTML = '<p style="color:#1B1A19; font-size:16px; line-height:1.6; margin:0;">Thanks — your request has been sent. We\'ll get back to you within 24 hours.</p>';
+      } else {
+        if (btn) { btn.disabled = false; btn.textContent = originalText; }
+        alert('Something went wrong sending your request — please email ashwin@goodhoperetreaders.com directly, or try again.');
+      }
+    }).catch(function(){
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert('Something went wrong sending your request — please email ashwin@goodhoperetreaders.com directly, or try again.');
+    });
+  });
+})();
+</script>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #141312; padding: 64px clamp(16px, 5vw, 48px) 28px clamp(16px, 5vw, 48px);">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(16px, 5vw, 48px); padding-bottom: 40px; border-bottom: 1px solid #2C2B29;">
+<div>
+<span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 20px; color: #fff;">GOOD HOPE <span style="color: #E8631C;">RETREADERS</span></span>
+<p style="font-size: 14px; color: #8A867D; line-height: 1.6; margin: 16px 0 0 0; max-width: 340px;">Machinery, consumables, components, and repair tools for tire retreading workshops worldwide.</p>
+<div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #D8D4CC;">
+<a href="tel:+14379885132" style="color: #D8D4CC;">+1 (437) 988-5132</a>
+<a href="mailto:ashwin@goodhoperetreaders.com" style="color: #D8D4CC;">ashwin@goodhoperetreaders.com</a>
+<span style="color: #D8D4CC; font-size: 14px;">884 Wellington, Windsor, Ontario, N9A 5J6</span>
+</div>
+</div>
+<div>
+<h4 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 1px; color: #fff; margin: 0 0 16px 0;">PRODUCTS</h4>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<a href="machinery.html" style="color: #8A867D; font-size: 14px;">Machinery</a>
+<a href="consumables.html" style="color: #8A867D; font-size: 14px;">Consumables</a>
+<a href="components.html" style="color: #8A867D; font-size: 14px;">Components</a>
+<a href="repair-tools.html" style="color: #8A867D; font-size: 14px;">Repair Tools</a>
+</div>
+</div>
+<div>
+<h4 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 1px; color: #fff; margin: 0 0 16px 0;">COMPANY</h4>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<a href="#pricing" style="color: #8A867D; font-size: 14px;">Request a Quote</a>
+<a href="https://wa.me/14379885132" style="color: #8A867D; font-size: 14px;">WhatsApp</a>
+<a href="https://www.linkedin.com/company/goodhope-enterprise-inc/" style="color: #8A867D; font-size: 14px;">LinkedIn</a>
+<a href="blog.html" style="color: #8A867D; font-size: 14px;">Blog</a>
+</div>
+</div>
+</div>
+<p style="text-align: center; font-size: 13px; color: #6B6862; margin: 24px 0 0 0;">© 2026 Good Hope Retreaders. All rights reserved.</p>
+</footer>
+</div>
+
+<script>
+(function(){
+  var LOW = 0.30, HIGH = 0.50;
+  var RATES = { CAD: {sym: '$', per: 1}, USD: {sym: '$', per: 0.73}, EUR: {sym: '€', per: 0.67}, GBP: {sym: '£', per: 0.57} };
+  var SEGMENTS = {
+    tbr: { note: 'Example figures: a comparable new drive or trailer radial. Truck/bus is where retreading volume concentrates.', ex_new: '550', ex_count: '40' },
+    otr: { note: 'Example figures: OTR casings carry the highest per-tire values, so the lifecycle saving per tire is largest here.', ex_new: '3800', ex_count: '12' },
+    plt: { note: 'Example figures: retreading in this segment is most common in commercial light-truck fleet use.', ex_new: '180', ex_count: '60' }
+  };
+
+  var $ = function(id){ return document.getElementById(id); };
+  var curSel = $('calc-currency'), segSel = $('calc-segment'), countEl = $('calc-count'),
+      newEl = $('calc-newprice'), retEl = $('calc-retread'), goBtn = $('calc-go'),
+      errEl = $('calc-error'), resWrap = $('calc-results');
+
+  var nf = new Intl.NumberFormat('en-CA', { maximumFractionDigits: 0 });
+
+  function cur(){ return RATES[curSel.value] || RATES.CAD; }
+  function money(n){ return cur().sym + nf.format(Math.round(n)); }
+  function range(lo, hi){ return money(lo) + ' – ' + money(hi); }
+
+  function applySegment(){
+    var s = SEGMENTS[segSel.value] || SEGMENTS.tbr;
+    $('calc-segment-note').textContent = s.note;
+    newEl.placeholder = 'e.g. ' + s.ex_new;
+    countEl.placeholder = 'e.g. ' + s.ex_count;
+  }
+  function applyCurrency(){
+    var sym = cur().sym;
+    $('calc-newprice-prefix').textContent = sym;
+    $('calc-retread-prefix').textContent = sym;
+    if (resWrap.style.display !== 'none') { compute(); }
+  }
+
+  function num(el){ var v = parseFloat(el.value); return isFinite(v) ? v : NaN; }
+
+  function compute(){
+    errEl.style.display = 'none';
+    var count = num(countEl), newP = num(newEl), ret = retEl.value.trim() === '' ? NaN : num(retEl);
+
+    if (!(count > 0) || !(newP > 0)) {
+      resWrap.style.display = 'none';
+      errEl.textContent = 'Enter a tire count of 1 or more and a new-tire price above 0 to see an estimate.';
+      errEl.style.display = 'block';
+      return null;
+    }
+    count = Math.floor(count);
+
+    var costLo = newP * LOW, costHi = newP * HIGH;
+    var saveTireLo = newP - costHi, saveTireHi = newP - costLo;
+    var saveMonthLo = saveTireLo * count, saveMonthHi = saveTireHi * count;
+    var saveYearLo = saveMonthLo * 12, saveYearHi = saveMonthHi * 12;
+
+    $('r-perretread').textContent = range(costLo, costHi);
+    $('r-pertire').textContent = range(saveTireLo, saveTireHi);
+    $('r-permonth').textContent = range(saveMonthLo, saveMonthHi);
+    $('r-peryear').textContent = range(saveYearLo, saveYearHi);
+    $('r-permonth-basis').textContent = 'across ' + nf.format(count) + ' tire' + (count === 1 ? '' : 's') + '/month';
+
+    var plain = 'At 30–50% of a ' + money(newP) + ' new tire, a retread works out to about ' +
+      range(costLo, costHi) + '. That is roughly ' + range(saveTireLo, saveTireHi) +
+      ' saved per tire — so retreading about ' + nf.format(count) + ' tire' + (count === 1 ? '' : 's') +
+      ' a month could save on the order of ' + range(saveMonthLo, saveMonthHi) + ' per month, or ' +
+      range(saveYearLo, saveYearHi) + ' a year.';
+    if (curSel.value !== 'CAD') {
+      var cadNew = newP / cur().per;
+      plain += ' (Your ' + money(newP) + ' new-tire price is about $' + nf.format(Math.round(cadNew)) +
+        ' CAD at the illustrative rate above; Good Hope quotes in CAD.)';
+    }
+    $('r-plain').textContent = plain;
+
+    var own = $('r-ownblock');
+    if (ret > 0) {
+      var ownTire = newP - ret, ownYear = ownTire * count * 12;
+      var validOwn = ret < newP;
+      $('r-own-pertire').textContent = validOwn ? money(ownTire) : '—';
+      $('r-own-peryear').textContent = validOwn ? money(ownYear) : '—';
+      var note;
+      if (ret >= newP) {
+        note = 'The retread cost you entered (' + money(ret) + ') is at or above your new-tire price — worth double-checking the figures.';
+      } else if (ret < costLo) {
+        note = 'At ' + money(ret) + ', your current retread cost is below the typical 30–50% industry band for a tire at this price.';
+      } else if (ret > costHi) {
+        note = 'At ' + money(ret) + ', your current retread cost is above the typical 30–50% industry band — worth checking what manufacturer-direct tread rubber, cement and envelopes would do to your cost per retread.';
+      } else {
+        note = 'At ' + money(ret) + ', your current retread cost sits within the typical 30–50% industry band.';
+      }
+      $('r-own-note').textContent = note;
+      own.style.display = 'block';
+    } else {
+      own.style.display = 'none';
+    }
+
+    resWrap.style.display = 'block';
+    return { count: count, newP: newP, ret: ret, saveYearLo: saveYearLo, saveYearHi: saveYearHi };
+  }
+
+  window.goodhopeCalcSummary = function(){
+    var count = num(countEl), newP = num(newEl), ret = retEl.value.trim() === '' ? NaN : num(retEl);
+    if (!(count > 0) || !(newP > 0)) { return 'Calculator not completed.'; }
+    var c = cur();
+    var costLo = newP * LOW, costHi = newP * HIGH;
+    var yLo = (newP - costHi) * Math.floor(count) * 12, yHi = (newP - costLo) * Math.floor(count) * 12;
+    var s = 'Segment: ' + segSel.options[segSel.selectedIndex].text +
+      ' | Currency: ' + curSel.value +
+      ' | Tires/month: ' + Math.floor(count) +
+      ' | New-tire price: ' + c.sym + nf.format(newP) +
+      (ret > 0 ? ' | Current retread cost: ' + c.sym + nf.format(ret) : ' | Current retread cost: not given') +
+      ' | Est. annual saving (industry range): ' + c.sym + nf.format(Math.round(yLo)) + ' – ' + c.sym + nf.format(Math.round(yHi));
+    return s;
+  };
+
+  goBtn.addEventListener('click', function(){ compute(); });
+  [countEl, newEl, retEl].forEach(function(el){
+    el.addEventListener('input', function(){ if (resWrap.style.display !== 'none') compute(); });
+  });
+  segSel.addEventListener('change', function(){ applySegment(); if (resWrap.style.display !== 'none') compute(); });
+  curSel.addEventListener('change', applyCurrency);
+
+  applySegment();
+  applyCurrency();
+})();
+</script>
+
+</body></html>
