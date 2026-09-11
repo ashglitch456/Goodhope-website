@@ -59,11 +59,15 @@ a:hover { color: #C24F12; }
       font-size: 15px; color: #8A867D; pointer-events: none;
     }
     .calc-inputwrap .calc-input.has-prefix { padding-left: 30px; }
-    .result-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E6E2DA; }
+    .result-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid #E6E2DA; flex-wrap: wrap; }
     .result-row:last-child { border-bottom: none; }
     .result-label { font-size: 14px; color: #6E6A62; line-height: 1.5; }
     .result-value { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 20px; color: #1B1A19; white-space: nowrap; text-align: right; }
     .result-value.big { font-size: 26px; color: #E8631C; }
+    @media (max-width: 480px) {
+      .result-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .result-value { text-align: left; white-space: normal; word-break: break-word; }
+    }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4RK89Q5V8"></script>
