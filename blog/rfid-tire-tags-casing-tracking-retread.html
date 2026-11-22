@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<title>RFID Tire Tags and Casing Tracking: What an In-House Retread Program Should Know</title>
+<link rel="canonical" href="https://www.goodhoperetreaders.com/blog/rfid-tire-tags-casing-tracking-retread">
+<meta name="description" content="What RFID tire tags are, the ISO 20909–20912 standards behind them, which tag types survive retreading, and how casing-level tracking feeds retreadability and salvage-rate decisions.">
+<meta property="og:title" content="RFID Tire Tags and Casing Tracking: What an In-House Retread Program Should Know">
+<meta property="og:description" content="What RFID tire tags are, the ISO 20909–20912 standards behind them, which tag types survive retreading, and how casing-level tracking feeds retreadability and salvage-rate decisions.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.goodhoperetreaders.com/blog/rfid-tire-tags-casing-tracking-retread">
+<meta property="og:image" content="https://www.goodhoperetreaders.com/rfid-tire-tags-casing-tracking-retread-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+   "@context": "https://schema.org",
+   "@type": "BlogPosting",
+   "headline": "RFID Tire Tags and Casing Tracking: What an In-House Retread Program Should Know",
+   "description": "What RFID tire tags are, the ISO 20909–20912 standards behind them, which tag types survive retreading, and how casing-level tracking feeds retreadability and salvage-rate decisions.",
+   "author": { "@type": "Organization", "name": "Good Hope Retreaders" },
+   "publisher": { "@type": "Organization", "name": "Good Hope Retreaders" },
+   "datePublished": "2026-11-22",
+   "image": "https://www.goodhoperetreaders.com/rfid-tire-tags-casing-tracking-retread-hero.jpg"
+}
+</script>
+<style>
+body { margin: 0; background: #F7F5F1; }
+img[style*="contain"] { background: #fff; }
+::selection { background: #E8631C; color: #fff; }
+a { color: #E8631C; text-decoration: none; }
+a:hover { color: #C24F12; }
+table.article-table td, table.article-table th { padding: 10px 12px; font-size: 14px; }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q4RK89Q5V8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Q4RK89Q5V8');
+</script>
+</head>
+<body>
+
+<div style="font-family: 'Inter', sans-serif; color: #1B1A19; background: #F7F5F1; width: 100%; min-height: 100vh;">
+<header style="position: sticky; top: 0; z-index: 100; background: #1B1A19; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; padding: 14px 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); box-sizing: border-box;">
+<div style="display:flex; align-items:center; gap:14px; flex-shrink:0;">
+<a href="#" onclick="history.back(); return false;" style="display:flex; align-items:center; justify-content:center; width:34px; height:34px; border-radius:50%; background:#2A2926; color:#fff; font-size:17px; flex-shrink:0; line-height:1; cursor:pointer;" title="Go back">←</a>
+<a href="../index.html" style="display:flex; align-items:center; gap:10px; line-height: 1; flex-shrink: 0;">
+<svg fill="none" height="34" style="flex-shrink:0;" viewBox="0 0 34 34" width="34" xmlns="http://www.w3.org/2000/svg">
+<circle cx="17" cy="17" r="14.5" stroke="#E8631C" stroke-width="3"></circle>
+<circle cx="17" cy="17" fill="#E8631C" r="5.5"></circle>
+<g stroke="#E8631C" stroke-linecap="round" stroke-width="3">
+<line x1="17" x2="17" y1="1.5" y2="6.5"></line>
+<line x1="17" x2="17" y1="27.5" y2="32.5"></line>
+<line x1="1.5" x2="6.5" y1="17" y2="17"></line>
+<line x1="27.5" x2="32.5" y1="17" y2="17"></line>
+</g>
+</svg>
+<span style="display:flex; flex-direction:column;">
+<span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 19px; color: #fff; letter-spacing: 0.3px; white-space: nowrap;">GOOD HOPE</span>
+<span style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 11px; color: #E8631C; letter-spacing: 2.5px;">RETREADERS</span>
+</span>
+</a>
+</div>
+<nav style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px 18px; flex: 1 1 auto; min-width: 0; justify-content: center;">
+<a href="../index.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Home</a>
+<a href="../machinery.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Machinery</a>
+<a href="../consumables.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Consumables</a>
+<a href="../components.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Components</a>
+<a href="../repair-tools.html" style="color: #E4E1DA; font-weight: 500; font-size: 13.5px; white-space: nowrap;">Repair Tools</a>
+<a href="../blog.html" style="color: #E8631C; font-weight: 600; font-size: 13.5px; border-bottom: 2px solid #E8631C; padding-bottom: 4px; white-space: nowrap;">Blog</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; flex-shrink: 0;">
+<a href="tel:+14379885132" style="color: #fff; font-weight: 600; font-size: 13.5px; white-space: nowrap;">+1 (437) 988-5132</a>
+<a href="#quote" style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 0.3px; padding: 11px 16px; border-radius: 3px; white-space: nowrap;">REQUEST A QUOTE</a>
+</div>
+</header>
+<!-- ARTICLE HERO -->
+<section style="background: #1B1A19; padding: 64px clamp(16px, 5vw, 48px) 56px clamp(16px, 5vw, 48px);">
+<div style="max-width: 820px; margin: 0 auto;">
+<p style="font-size: 13px; color: #8A867D; margin: 0 0 14px 0;"><a href="../index.html" style="color: #8A867D;">Home</a> / <a href="../blog.html" style="color: #8A867D;">Blog</a> / <span style="color: #D8D4CC;">RFID Tire Tags &amp; Casing Tracking</span></p>
+<span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">CASING GUIDE</span>
+<h1 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 38px; color: #fff; margin: 12px 0 14px 0; line-height: 1.25;">RFID Tire Tags and Casing Tracking: What an In-House Retread Program Should Know</h1>
+<p style="font-size: 16px; color: #B9B5AC; line-height: 1.7; max-width: 680px; margin: 0;">What RFID tire tags are, the ISO 20909–20912 standards behind them, which tag types survive retreading, and how casing-level tracking feeds retreadability and salvage-rate decisions.</p>
+<p style="font-size: 13px; color: #8A867D; margin: 18px 0 0 0;">Published November 22, 2026 · Good Hope Retreaders</p>
+</div>
+</section>
+<!-- ARTICLE BODY -->
+<section style="padding: 56px clamp(16px, 5vw, 48px) 24px clamp(16px, 5vw, 48px);">
+<div style="max-width: 780px; margin: 0 auto;">
+
+<img alt="A technician in work gloves handling tires on a storage rack, the kind of tire-by-tire handling a casing tracking program records" src="../rfid-tire-tags-casing-tracking-retread-hero.jpg" style="width: 100%; border-radius: 6px; margin: 0 0 32px 0; display: block;"/>
+
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">A casing program only works if you can tell one casing from another. You need to know which tire came off which truck, how many times it has been retreaded, what the inspector found and why it was rejected. When a fleet sends casings to an outside retreader, much of that history sits in someone else's system. When the fleet runs its own retread line, the history is the fleet's to capture, and how you identify each casing decides how good that data will be.</p>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">This guide explains what RFID tire tags are, which international standards govern them, how they compare with the identification already moulded into every tire, and how to decide whether RFID belongs in your in-house program.</p>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">What the DOT code tells you, and what it doesn't</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Every tire sold in the U.S. carries a Tire Identification Number (TIN) under 49 CFR Part 574. Its first group is a plant code that identifies the manufacturer or retreader. Retreaded tires carry a three-symbol plant code assigned by NHTSA. The final group is a four-digit date code that identifies the week and year of manufacture, or of retreading for a retread. (We cover the retreader's labelling obligations in <a href="dot-certification-in-house-retread-fmvss-117.html">DOT Certification for an In-House Retread Line</a>.)</p>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">The TIN describes <em>where and when</em> a tire was made. It isn't designed to be a serial number for one specific casing, and it can't tell you that casing's service history. That's why serious casing programs add their own identifier, such as a barcode or an RFID tag, and log each casing against it (see <a href="casing-ownership-in-house-retread-control.html">Casing Ownership</a>).</p>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">What an RFID tire tag is</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">An RFID tire tag is a small passive chip and antenna, with no battery, that a handheld or fixed reader can read by radio. Because the reader doesn't need line of sight, a technician can identify a tire on a rack, on a vehicle or in a stack without finding and cleaning a printed label.</p>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">The tire industry has standardized how this works through a family of ISO standards:</p>
+<ul style="margin: 0 0 20px 0; padding: 0 0 0 20px; font-size: 15px; color: #6E6A62; line-height: 1.9;">
+<li><strong>ISO 20909:2019</strong> sets out the requirements for using an RFID tag to identify a tire individually. It applies to passive tags and considers three tag types: <strong>embedded</strong>, <strong>patch</strong> and <strong>sticker</strong>. ISO lists a second edition in committee draft that will replace the 2019 version.</li>
+<li><strong>ISO 20910</strong> defines the data coding. A 96-bit Serialized Global Trade Item Number (SGTIN-96) is the unique identifier encoded in the tag, per the U.S. Tire Manufacturers Association's information bulletin and RAIN Alliance/GS1 guidance.</li>
+<li><strong>ISO 20911</strong> classifies how tags are attached to the tire.</li>
+<li><strong>ISO 20912:2020</strong> sets test methods for checking that an RFID-enabled tire meets ISO 20909's minimum reading-distance requirements, using passive UHF tags in the <strong>860–930 MHz</strong> band.</li>
+</ul>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">For a fleet, standardization means a tag read by one compliant reader should carry a unique ID in a predictable format, whoever made the tire. That's what makes a fleet-wide casing database practical.</p>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">Which tags survive retreading?</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">This is the question that matters most for a retread program, and the answer depends on where the tag sits.</p>
+<ul style="margin: 0 0 20px 0; padding: 0 0 0 20px; font-size: 15px; color: #6E6A62; line-height: 1.9;">
+<li><strong>Tags built into the tire at manufacture.</strong> RFID has moved into new commercial truck tires at scale. In 2017 a major manufacturer announced it was building RFID tags into its full North American commercial truck tire line, including retreads, and said the tags were engineered to withstand the retread process (reported by <em>European Rubber Journal</em> and <em>Heavy Duty Trucking</em>). A tag that's part of the casing can follow the casing from one retread to the next.</li>
+<li><strong>Patch tags added afterward.</strong> A retreader profiled by <em>RFID Journal</em> puts disposable adhesive UHF labels on incoming new tires and bonds a permanent rubberized patch tag to retreads, so each tire can be tracked through its own production process, its warehouse and later retreads. A patch tag lets you bring casings without a factory tag into the same system.</li>
+<li><strong>Stickers and printed labels.</strong> These sit on the surface. Buffing removes the crown surface and the casing goes through heat and pressure in the curing chamber, so a label in the wrong place won't last. Treat surface labels as temporary job tickets, not permanent casing IDs.</li>
+</ul>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Before you commit to a tag type, check where the tag sits relative to the areas your <a href="buffing-rasping-casing-prep-bond-quality.html">buffing</a>, <a href="skiving-casing-repair-before-retreading.html">skiving and repair</a> steps work on, and confirm with the tag supplier that it's rated for your cure temperatures and times.</p>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">What you can do with a tagged casing</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Trade press coverage of RFID in fleets describes the main benefit as tracking: linking each tire's unique ID to tread-depth and inflation readings, the vehicles it ran on, and the service providers and retread plants that handled it. Manufacturer representatives have also pointed to fewer inventory errors, because scanning replaces hand-keying long codes. For an in-house line, that history feeds directly into decisions you already make:</p>
+<ul style="margin: 0 0 20px 0; padding: 0 0 0 20px; font-size: 15px; color: #6E6A62; line-height: 1.9;">
+<li><strong>Retreadability calls.</strong> Age, previous retreads and repair history all feed into <a href="casing-age-limits-retread-policy.html">casing age policy</a> and <a href="casing-retread-cycles-in-house-planning.html">how many retread cycles you plan for</a>.</li>
+<li><strong>Your salvage-rate KPI.</strong> Logging each casing's inspection result against its ID shows <em>why</em> casings are rejected, by vehicle, route or position. That's the data behind <a href="casing-salvage-rate-in-house-retread-kpi.html">casing salvage rate</a>.</li>
+<li><strong>Pull-point discipline.</strong> Tread-depth readings tied to a casing ID show whether tires are coming off at the <a href="tire-pull-point-casing-retreadability-policy.html">pull point</a> that protects the casing.</li>
+<li><strong>Warranty and adjustment.</strong> A clean record of what was done to a casing, and when, makes a <a href="retread-warranty-adjustment-policy.html">warranty claim</a> simpler to resolve.</li>
+</ul>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Industry sources have also suggested tags could eventually help with tire recall identification. For now, the practical value is tracking.</p>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">Barcode or RFID?</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">RFID isn't the only option. A durable barcode works as a casing ID if your technicians can reliably find it, read it and keep it legible. RFID's advantages are speed and no need for line of sight: you can scan a rack or a truck without handling each tire. Its costs are the readers, the software and, for casings without a factory tag, the tags and labour to fit them. A reasonable approach for a new in-house line:</p>
+<ul style="margin: 0 0 20px 0; padding: 0 0 0 20px; font-size: 15px; color: #6E6A62; line-height: 1.9;">
+<li><strong>Use the identifier that's already there.</strong> If much of your fleet's new-tire purchases already carry factory tags, a reader may be all you need to start.</li>
+<li><strong>Decide where each scan happens.</strong> Useful scan points are receiving, initial inspection, after buffing, before curing, final inspection and return to service. More scan points give better data, but only if someone records results at each one.</li>
+<li><strong>Keep the software simple and fleet-owned.</strong> The casing database is a long-term asset. Make sure you can export it, and that it isn't locked inside a single outside supplier's system.</li>
+</ul>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">The bigger point: your casing data stays with you</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Casings are the asset that makes retreading pay, and casing history is what lets you manage that asset. A fleet that runs its own line and tracks its own casings decides what to retread, when to pull tires and how to improve salvage, using its own data rather than someone else's report. That's the same independence argument we make in <a href="franchise-lock-in-vs-in-house-retread.html">The Real Cost of Franchise Lock-In vs. Running Your Own Retread Line</a>.</p>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 20px 0;">Good Hope supplies the equipment the casing passes through at each scan point, from <a href="../inspection-spreader.html">inspection spreaders</a> and <a href="../buffing-machine.html">buffing machines</a> to <a href="../tire-builder.html">tire builders</a> and <a href="../electric-curing-chamber.html">electric curing chambers</a>, along with the <a href="../consumables.html">consumables</a> and <a href="../repair-tools.html">repair tools</a> that keep the line running. Everything is sold manufacturer-direct with local Ontario service. We don't sell RFID systems. We help you set up the line those systems track.</p>
+
+<!-- RELATED GUIDES -->
+<div style="margin: 40px 0; padding: 24px 28px; background: #fff; border: 1px solid #E6E2DA; border-radius: 6px;">
+<h4 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 1.5px; color: #1B1A19; margin: 0 0 14px 0;">RELATED GUIDES</h4>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<a href="casing-ownership-in-house-retread-control.html" style="font-weight: 600; font-size: 15px; color: #E8631C;">Casing Ownership: Why It Matters More When You Control Your Own Retread Line →</a>
+<a href="casing-salvage-rate-in-house-retread-kpi.html" style="font-weight: 600; font-size: 15px; color: #E8631C;">Casing Salvage Rate: The One Number That Decides Whether In-House Retreading Pays →</a>
+<a href="dot-certification-in-house-retread-fmvss-117.html" style="font-weight: 600; font-size: 15px; color: #E8631C;">DOT Certification for an In-House Retread Line: What FMVSS 117 Actually Requires →</a>
+<a href="casing-inspection-5-point-check.html" style="font-weight: 600; font-size: 15px; color: #E8631C;">Casing Inspection: The 5-Point Check Before Every Retread →</a>
+</div>
+</div>
+
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 26px; color: #1B1A19; margin: 44px 0 16px 0;">Setting up the line your casings will flow through?</h2>
+<p style="font-size: 16px; color: #3F3B36; line-height: 1.75; margin: 0 0 28px 0;">Tell us your expected weekly retread volume and casing sizes and we'll quote the inspection, buffing, building and curing equipment as one transparent, all-in Canadian price, with local Ontario service.</p>
+<a href="#quote" style="display: inline-block; background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 16px 30px; border-radius: 3px; margin-bottom: 24px;">Get a retread line quote →</a>
+
+
+</div>
+</section>
+<!-- QUOTE FORM -->
+<section id="quote" style="background: #1B1A19; padding: 96px clamp(16px, 5vw, 48px);">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 64px;">
+<div>
+<span style="color: #E8631C; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 3px; font-size: 13px;">GET A QUOTE</span>
+<h2 style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 34px; color: #fff; margin: 12px 0 20px 0;">Ask About Retread Line Equipment</h2>
+<p style="font-size: 16px; color: #B9B5AC; line-height: 1.7; margin: 0 0 28px 0;">Send us your requirements and we'll get back to you within 24 hours with pricing and lead times — no obligation.</p>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<a href="tel:+14379885132" style="color: #fff; font-weight: 600; font-size: 16px;">📞 +1 (437) 988-5132</a>
+<a href="https://wa.me/14379885132" style="color: #fff; font-weight: 600; font-size: 16px;">💬 WhatsApp Us</a>
+<a href="mailto:ashwin@goodhoperetreaders.com" style="color: #fff; font-weight: 600; font-size: 16px;">✉️ ashwin@goodhoperetreaders.com</a>
+<span style="color: #fff; font-weight: 600; font-size: 16px;">📍 884 Wellington, Windsor, Ontario, N9A 5J6</span>
+</div>
+</div>
+<div style="background: #F7F5F1; border-radius: 8px; padding: 36px;">
+
+<form method="POST" action="https://formspree.io/f/xgogwkjz" style="display: flex; flex-direction: column; gap: 14px;">
+<input name="name" placeholder="Full Name" required style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
+<input name="email" placeholder="Email Address" required style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="email"/>
+<input name="_subject" type="hidden" value="New quote request — Good Hope Retreaders"/>
+<input name="company" placeholder="Company / Workshop Name" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+<input name="country" placeholder="Country" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="text"/>
+<input name="phone" placeholder="Phone / WhatsApp" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif;" type="tel"/>
+</div>
+<select name="interest" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif; color: #6E6A62;">
+<option>I'm interested in...</option>
+<option selected>Machinery</option>
+<option>Consumables</option>
+<option>Components</option>
+<option>Repair Tools</option>
+<option>Not sure yet</option>
+</select>
+<textarea name="message" placeholder="Quantity, tyre sizes, anything else we should know..." rows="4" style="padding: 14px; border: 1px solid #D8D4CC; border-radius: 4px; font-size: 15px; font-family: 'Inter', sans-serif; resize: vertical;"></textarea>
+<button style="background: #E8631C; color: #1B1A19; font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 15px; padding: 16px; border: none; border-radius: 4px; cursor: pointer; margin-top: 4px;" type="submit">Send Quote Request</button>
+</form>
+<script>
+(function(){
+  var form = document.querySelector('form[action*="formspree.io/f/xgogwkjz"]');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var originalText = btn ? btn.textContent : '';
+    if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+    var data = new FormData(form);
+    fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } }).then(function(response){
+      if (response.ok) {
+        if (typeof gtag === 'function') {
+          gtag('event', 'qualify_lead', {
+            'form_location': window.location.pathname,
+            'interest': (form.querySelector('[name="interest"]') || {}).value || ''
+          });
+        }
+        form.innerHTML = '<p style="color:#1B1A19; font-size:16px; line-height:1.6; margin:0;">Thanks — your request has been sent. We\'ll get back to you within 24 hours.</p>';
+      } else {
+        if (btn) { btn.disabled = false; btn.textContent = originalText; }
+        alert('Something went wrong sending your request — please email ashwin@goodhoperetreaders.com directly, or try again.');
+      }
+    }).catch(function(){
+      if (btn) { btn.disabled = false; btn.textContent = originalText; }
+      alert('Something went wrong sending your request — please email ashwin@goodhoperetreaders.com directly, or try again.');
+    });
+  });
+})();
+</script>
+
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer style="background: #141312; padding: 64px clamp(16px, 5vw, 48px) 28px clamp(16px, 5vw, 48px);">
+<div style="max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(16px, 5vw, 48px); padding-bottom: 40px; border-bottom: 1px solid #2C2B29;">
+<div>
+<span style="font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 20px; color: #fff;">GOOD HOPE <span style="color: #E8631C;">RETREADERS</span></span>
+<p style="font-size: 14px; color: #8A867D; line-height: 1.6; margin: 16px 0 0 0; max-width: 340px;">Machinery, consumables, components, and repair tools for tire retreading workshops worldwide.</p>
+<div style="margin-top: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #D8D4CC;">
+<a href="tel:+14379885132" style="color: #D8D4CC;">+1 (437) 988-5132</a>
+<a href="mailto:ashwin@goodhoperetreaders.com" style="color: #D8D4CC;">ashwin@goodhoperetreaders.com</a>
+<span style="color: #D8D4CC; font-size: 14px;">884 Wellington, Windsor, Ontario, N9A 5J6</span>
+</div>
+</div>
+<div>
+<h4 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 1px; color: #fff; margin: 0 0 16px 0;">PRODUCTS</h4>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<a href="../machinery.html" style="color: #8A867D; font-size: 14px;">Machinery</a>
+<a href="../consumables.html" style="color: #8A867D; font-size: 14px;">Consumables</a>
+<a href="../components.html" style="color: #8A867D; font-size: 14px;">Components</a>
+<a href="../repair-tools.html" style="color: #8A867D; font-size: 14px;">Repair Tools</a>
+</div>
+</div>
+<div>
+<h4 style="font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 14px; letter-spacing: 1px; color: #fff; margin: 0 0 16px 0;">COMPANY</h4>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<a href="#quote" style="color: #8A867D; font-size: 14px;">Request a Quote</a>
+<a href="https://wa.me/14379885132" style="color: #8A867D; font-size: 14px;">WhatsApp</a>
+<a href="https://www.linkedin.com/company/goodhope-enterprise-inc/" style="color: #8A867D; font-size: 14px;">LinkedIn</a>
+<a href="../blog.html" style="color: #8A867D; font-size: 14px;">Blog</a>
+</div>
+</div>
+</div>
+<p style="text-align: center; font-size: 13px; color: #6B6862; margin: 24px 0 0 0;">© 2026 Good Hope Retreaders. All rights reserved.</p>
+</footer>
+</div>
+
+</body>
+</html>
